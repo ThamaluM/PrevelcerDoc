@@ -1,0 +1,12 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Tracking Across Frames}}{2}{figure.caption.10}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces BCRF in an end-to-end trainable deep net}}{3}{figure.caption.11}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Structure of the proposed LSTM network\relax }}{10}{figure.caption.12}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Overview of the overall 2D tracking system\relax }}{11}{figure.caption.13}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Association LSTM\relax }}{14}{figure.caption.14}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Convergence of BCRF Inference}}{24}{figure.caption.17}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Visualisation of improvements on COCO Dataset\relax }}{28}{figure.caption.22}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Bipartite Potentials Visualization}}{28}{figure.caption.23}
+\addvspace {10\p@ }
