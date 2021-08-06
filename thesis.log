@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.8.6)  6 AUG 2021 17:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.8.6)  7 AUG 2021 03:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -684,91 +684,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--26
 
  (./chapters/Introduction.tex
 Chapter 1.
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ˜ in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
-(./figs/tracker_frames.tex
-<figs/occlusions.png, id=364, 1054.6903pt x 453.19313pt>
-File: figs/occlusions.png Graphic file (type png)
-<use figs/occlusions.png>
-Package pdftex.def Info: figs/occlusions.png  used on input line 4.
-(pdftex.def)             Requested size: 433.62001pt x 186.3221pt.
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
-)
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
- (./figs/bcrf_arch.tex
-<figs/bcrf_arch.png, id=369, 803.25093pt x 481.04718pt>
-File: figs/bcrf_arch.png Graphic file (type png)
-<use figs/bcrf_arch.png>
-Package pdftex.def Info: figs/bcrf_arch.png  used on input line 4.
-(pdftex.def)             Requested size: 433.62001pt x 258.45135pt.
-)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.18 
+l.14 
       [1
 
 
 
-] [2 <./figs/occlusions.png>] [3 <./figs/bcrf_arch.png>] [4] [5]
-[6] [7]) [8]
+] [2]) [3]
 \openout2 = `chapters/Methodology.aux'.
 
  (./chapters/Methodology.tex
 Chapter 2.
-<figs/LSTM_network.png, id=551, 1794.705pt x 783.92876pt>
-File: figs/LSTM_network.png Graphic file (type png)
-<use figs/LSTM_network.png>
-Package pdftex.def Info: figs/LSTM_network.png  used on input line 16.
-(pdftex.def)             Requested size: 433.62001pt x 189.40273pt.
-[9
+[4
 
 
 
-] [10 <./figs/LSTM_network.png>]
-<figs/tracker.png, id=568, 1063.3326pt x 448.5558pt>
-File: figs/tracker.png Graphic file (type png)
-<use figs/tracker.png>
-Package pdftex.def Info: figs/tracker.png  used on input line 39.
-(pdftex.def)             Requested size: 433.62001pt x 182.91663pt.
- [11 <./figs/tracker.png>] [12]
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
- [13]
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ˜ in font ptmr7t!
-<figs/lstm_associate.png, id=598, 182.1204pt x 204.765pt>
-File: figs/lstm_associate.png Graphic file (type png)
-<use figs/lstm_associate.png>
-Package pdftex.def Info: figs/lstm_associate.png  used on input line 88.
-(pdftex.def)             Requested size: 216.81pt x 243.77959pt.
- [14 <./figs/lstm_associate.png>] [15]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 119.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [16] [17] [18]
-[19] [20]) [21]
+] [5]) [6]
 \openout2 = `chapters/Results.aux'.
 
  (./chapters/Results.tex
@@ -779,180 +713,187 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[22
+[7
 
 
 
-] [23] (./figs/kl_div.tex
-<figs/kl_div.png, id=708, 462.528pt x 346.896pt>
+] [8] (./figs/kl_div.tex
+<figs/kl_div.png, id=363, 462.528pt x 346.896pt>
 File: figs/kl_div.png Graphic file (type png)
 <use figs/kl_div.png>
 Package pdftex.def Info: figs/kl_div.png  used on input line 4.
 (pdftex.def)             Requested size: 216.81pt x 162.60709pt.
-) [24 <./figs/kl_div.png>]
+)
+
+LaTeX Warning: Reference `eq:q_approx' on page 9 undefined on input line 79.
+
+[9 <./figs/kl_div.png>]
+
+LaTeX Warning: Reference `fig:bcrf_net' on page 10 undefined on input line 86.
+
 (./figs/tbl_pascal_voc.tex
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 1.
 
 ) (./figs/tbl_pascal_detailed.tex) (./figs/pascal.tex
-<figs/pascal/original/144.jpg, id=735, 501.875pt x 376.40625pt>
+<figs/pascal/original/144.jpg, id=390, 501.875pt x 376.40625pt>
 File: figs/pascal/original/144.jpg Graphic file (type jpg)
 <use figs/pascal/original/144.jpg>
 Package pdftex.def Info: figs/pascal/original/144.jpg  used on input line 8.
 (pdftex.def)             Requested size: 82.38885pt x 61.78845pt.
-<figs/pascal/before_sem/144.png, id=736, 361.35pt x 271.0125pt>
+<figs/pascal/before_sem/144.png, id=391, 361.35pt x 271.0125pt>
 File: figs/pascal/before_sem/144.png Graphic file (type png)
 <use figs/pascal/before_sem/144.png>
 Package pdftex.def Info: figs/pascal/before_sem/144.png  used on input line 9.
 (pdftex.def)             Requested size: 82.38885pt x 61.78983pt.
-<figs/pascal/before_ins/144.png, id=737, 361.35pt x 271.0125pt>
+<figs/pascal/before_ins/144.png, id=392, 361.35pt x 271.0125pt>
 File: figs/pascal/before_ins/144.png Graphic file (type png)
 <use figs/pascal/before_ins/144.png>
 Package pdftex.def Info: figs/pascal/before_ins/144.png  used on input line 10.
 
 (pdftex.def)             Requested size: 82.38885pt x 61.78983pt.
-<figs/pascal/after_sem/144.png, id=738, 361.35pt x 271.0125pt>
+<figs/pascal/after_sem/144.png, id=393, 361.35pt x 271.0125pt>
 File: figs/pascal/after_sem/144.png Graphic file (type png)
 <use figs/pascal/after_sem/144.png>
 Package pdftex.def Info: figs/pascal/after_sem/144.png  used on input line 11.
 (pdftex.def)             Requested size: 82.38885pt x 61.78983pt.
-<figs/pascal/after_ins/144.png, id=739, 361.35pt x 271.0125pt>
+<figs/pascal/after_ins/144.png, id=394, 361.35pt x 271.0125pt>
 File: figs/pascal/after_ins/144.png Graphic file (type png)
 <use figs/pascal/after_ins/144.png>
 Package pdftex.def Info: figs/pascal/after_ins/144.png  used on input line 12.
 (pdftex.def)             Requested size: 82.38885pt x 61.78983pt.
-<figs/pascal/original/421.jpg, id=740, 501.875pt x 376.40625pt>
+<figs/pascal/original/421.jpg, id=395, 501.875pt x 376.40625pt>
 File: figs/pascal/original/421.jpg Graphic file (type jpg)
 <use figs/pascal/original/421.jpg>
 Package pdftex.def Info: figs/pascal/original/421.jpg  used on input line 14.
 (pdftex.def)             Requested size: 82.38885pt x 61.78845pt.
-<figs/pascal/before_sem/421.png, id=741, 361.35pt x 271.0125pt>
+<figs/pascal/before_sem/421.png, id=396, 361.35pt x 271.0125pt>
 File: figs/pascal/before_sem/421.png Graphic file (type png)
 <use figs/pascal/before_sem/421.png>
 Package pdftex.def Info: figs/pascal/before_sem/421.png  used on input line 15.
 
 (pdftex.def)             Requested size: 82.38885pt x 61.78983pt.
-<figs/pascal/before_ins/421.png, id=742, 361.35pt x 271.0125pt>
+<figs/pascal/before_ins/421.png, id=397, 361.35pt x 271.0125pt>
 File: figs/pascal/before_ins/421.png Graphic file (type png)
 <use figs/pascal/before_ins/421.png>
 Package pdftex.def Info: figs/pascal/before_ins/421.png  used on input line 16.
 
 (pdftex.def)             Requested size: 82.38885pt x 61.78983pt.
-<figs/pascal/after_sem/421.png, id=743, 361.35pt x 271.0125pt>
+<figs/pascal/after_sem/421.png, id=398, 361.35pt x 271.0125pt>
 File: figs/pascal/after_sem/421.png Graphic file (type png)
 <use figs/pascal/after_sem/421.png>
 Package pdftex.def Info: figs/pascal/after_sem/421.png  used on input line 17.
 (pdftex.def)             Requested size: 82.38885pt x 61.78983pt.
-<figs/pascal/after_ins/421.png, id=744, 361.35pt x 271.0125pt>
+<figs/pascal/after_ins/421.png, id=399, 361.35pt x 271.0125pt>
 File: figs/pascal/after_ins/421.png Graphic file (type png)
 <use figs/pascal/after_ins/421.png>
 Package pdftex.def Info: figs/pascal/after_ins/421.png  used on input line 18.
 (pdftex.def)             Requested size: 82.38885pt x 61.78983pt.
-<figs/pascal/original/438.jpg, id=745, 150.5625pt x 100.27463pt>
+<figs/pascal/original/438.jpg, id=400, 150.5625pt x 100.27463pt>
 File: figs/pascal/original/438.jpg Graphic file (type jpg)
 <use figs/pascal/original/438.jpg>
 Package pdftex.def Info: figs/pascal/original/438.jpg  used on input line 20.
 (pdftex.def)             Requested size: 82.38885pt x 54.87273pt.
-<figs/pascal/before_sem/438.png, id=746, 361.35pt x 240.6591pt>
+<figs/pascal/before_sem/438.png, id=401, 361.35pt x 240.6591pt>
 File: figs/pascal/before_sem/438.png Graphic file (type png)
 <use figs/pascal/before_sem/438.png>
 Package pdftex.def Info: figs/pascal/before_sem/438.png  used on input line 21.
 
 (pdftex.def)             Requested size: 82.38885pt x 54.86937pt.
-<figs/pascal/before_ins/438.png, id=747, 361.35pt x 240.6591pt>
+<figs/pascal/before_ins/438.png, id=402, 361.35pt x 240.6591pt>
 File: figs/pascal/before_ins/438.png Graphic file (type png)
 <use figs/pascal/before_ins/438.png>
 Package pdftex.def Info: figs/pascal/before_ins/438.png  used on input line 22.
 
 (pdftex.def)             Requested size: 82.38885pt x 54.86937pt.
-<figs/pascal/after_sem/438.png, id=748, 361.35pt x 240.6591pt>
+<figs/pascal/after_sem/438.png, id=403, 361.35pt x 240.6591pt>
 File: figs/pascal/after_sem/438.png Graphic file (type png)
 <use figs/pascal/after_sem/438.png>
 Package pdftex.def Info: figs/pascal/after_sem/438.png  used on input line 23.
 (pdftex.def)             Requested size: 82.38885pt x 54.86937pt.
-<figs/pascal/after_ins/438.png, id=749, 361.35pt x 240.6591pt>
+<figs/pascal/after_ins/438.png, id=404, 361.35pt x 240.6591pt>
 File: figs/pascal/after_ins/438.png Graphic file (type png)
 <use figs/pascal/after_ins/438.png>
 Package pdftex.def Info: figs/pascal/after_ins/438.png  used on input line 24.
 (pdftex.def)             Requested size: 82.38885pt x 54.86937pt.
-<figs/pascal/original/468.jpg, id=750, 501.875pt x 334.24875pt>
+<figs/pascal/original/468.jpg, id=405, 501.875pt x 334.24875pt>
 File: figs/pascal/original/468.jpg Graphic file (type jpg)
 <use figs/pascal/original/468.jpg>
 Package pdftex.def Info: figs/pascal/original/468.jpg  used on input line 26.
 (pdftex.def)             Requested size: 82.38885pt x 54.86815pt.
-<figs/pascal/before_sem/468.png, id=751, 361.35pt x 240.6591pt>
+<figs/pascal/before_sem/468.png, id=406, 361.35pt x 240.6591pt>
 File: figs/pascal/before_sem/468.png Graphic file (type png)
 <use figs/pascal/before_sem/468.png>
 Package pdftex.def Info: figs/pascal/before_sem/468.png  used on input line 27.
 
 (pdftex.def)             Requested size: 82.38885pt x 54.86937pt.
-<figs/pascal/before_ins/468.png, id=752, 361.35pt x 240.6591pt>
+<figs/pascal/before_ins/468.png, id=407, 361.35pt x 240.6591pt>
 File: figs/pascal/before_ins/468.png Graphic file (type png)
 <use figs/pascal/before_ins/468.png>
 Package pdftex.def Info: figs/pascal/before_ins/468.png  used on input line 28.
 
 (pdftex.def)             Requested size: 82.38885pt x 54.86937pt.
-<figs/pascal/after_sem/468.png, id=753, 361.35pt x 240.6591pt>
+<figs/pascal/after_sem/468.png, id=408, 361.35pt x 240.6591pt>
 File: figs/pascal/after_sem/468.png Graphic file (type png)
 <use figs/pascal/after_sem/468.png>
 Package pdftex.def Info: figs/pascal/after_sem/468.png  used on input line 29.
 (pdftex.def)             Requested size: 82.38885pt x 54.86937pt.
-<figs/pascal/after_ins/468.png, id=754, 361.35pt x 240.6591pt>
+<figs/pascal/after_ins/468.png, id=409, 361.35pt x 240.6591pt>
 File: figs/pascal/after_ins/468.png Graphic file (type png)
 <use figs/pascal/after_ins/468.png>
 Package pdftex.def Info: figs/pascal/after_ins/468.png  used on input line 30.
 (pdftex.def)             Requested size: 82.38885pt x 54.86937pt.
-<figs/pascal/original/184.jpg, id=755, 501.875pt x 376.40625pt>
+<figs/pascal/original/184.jpg, id=410, 501.875pt x 376.40625pt>
 File: figs/pascal/original/184.jpg Graphic file (type jpg)
 <use figs/pascal/original/184.jpg>
 Package pdftex.def Info: figs/pascal/original/184.jpg  used on input line 32.
 (pdftex.def)             Requested size: 82.38885pt x 61.78845pt.
-<figs/pascal/before_sem/184.png, id=756, 361.35pt x 271.0125pt>
+<figs/pascal/before_sem/184.png, id=411, 361.35pt x 271.0125pt>
 File: figs/pascal/before_sem/184.png Graphic file (type png)
 <use figs/pascal/before_sem/184.png>
 Package pdftex.def Info: figs/pascal/before_sem/184.png  used on input line 33.
 
 (pdftex.def)             Requested size: 82.38885pt x 61.78983pt.
-<figs/pascal/before_ins/184.png, id=757, 361.35pt x 271.0125pt>
+<figs/pascal/before_ins/184.png, id=412, 361.35pt x 271.0125pt>
 File: figs/pascal/before_ins/184.png Graphic file (type png)
 <use figs/pascal/before_ins/184.png>
 Package pdftex.def Info: figs/pascal/before_ins/184.png  used on input line 34.
 
 (pdftex.def)             Requested size: 82.38885pt x 61.78983pt.
-<figs/pascal/after_sem/184.png, id=758, 361.35pt x 271.0125pt>
+<figs/pascal/after_sem/184.png, id=413, 361.35pt x 271.0125pt>
 File: figs/pascal/after_sem/184.png Graphic file (type png)
 <use figs/pascal/after_sem/184.png>
 Package pdftex.def Info: figs/pascal/after_sem/184.png  used on input line 35.
 (pdftex.def)             Requested size: 82.38885pt x 61.78983pt.
-<figs/pascal/after_ins/184.png, id=759, 361.35pt x 271.0125pt>
+<figs/pascal/after_ins/184.png, id=414, 361.35pt x 271.0125pt>
 File: figs/pascal/after_ins/184.png Graphic file (type png)
 <use figs/pascal/after_ins/184.png>
 Package pdftex.def Info: figs/pascal/after_ins/184.png  used on input line 36.
 (pdftex.def)             Requested size: 82.38885pt x 61.78983pt.
-<figs/pascal/original/226.jpg, id=760, 376.40625pt x 501.875pt>
+<figs/pascal/original/226.jpg, id=415, 376.40625pt x 501.875pt>
 File: figs/pascal/original/226.jpg Graphic file (type jpg)
 <use figs/pascal/original/226.jpg>
 Package pdftex.def Info: figs/pascal/original/226.jpg  used on input line 38.
 (pdftex.def)             Requested size: 82.38885pt x 109.8538pt.
-<figs/pascal/before_sem/226.png, id=761, 271.0125pt x 361.35pt>
+<figs/pascal/before_sem/226.png, id=416, 271.0125pt x 361.35pt>
 File: figs/pascal/before_sem/226.png Graphic file (type png)
 <use figs/pascal/before_sem/226.png>
 Package pdftex.def Info: figs/pascal/before_sem/226.png  used on input line 39.
 
 (pdftex.def)             Requested size: 82.38885pt x 109.85043pt.
-<figs/pascal/before_ins/226.png, id=762, 271.0125pt x 361.35pt>
+<figs/pascal/before_ins/226.png, id=417, 271.0125pt x 361.35pt>
 File: figs/pascal/before_ins/226.png Graphic file (type png)
 <use figs/pascal/before_ins/226.png>
 Package pdftex.def Info: figs/pascal/before_ins/226.png  used on input line 40.
 
 (pdftex.def)             Requested size: 82.38885pt x 109.85043pt.
-<figs/pascal/after_sem/226.png, id=763, 271.0125pt x 361.35pt>
+<figs/pascal/after_sem/226.png, id=418, 271.0125pt x 361.35pt>
 File: figs/pascal/after_sem/226.png Graphic file (type png)
 <use figs/pascal/after_sem/226.png>
 Package pdftex.def Info: figs/pascal/after_sem/226.png  used on input line 41.
 (pdftex.def)             Requested size: 82.38885pt x 109.85043pt.
-<figs/pascal/after_ins/226.png, id=764, 271.0125pt x 361.35pt>
+<figs/pascal/after_ins/226.png, id=419, 271.0125pt x 361.35pt>
 File: figs/pascal/after_ins/226.png Graphic file (type png)
 <use figs/pascal/after_ins/226.png>
 Package pdftex.def Info: figs/pascal/after_ins/226.png  used on input line 42.
@@ -971,18 +912,18 @@ Overfull \hbox (11.5801pt too wide) in paragraph at lines 3--16
  []
 
 )
-<figs/stuff_vis.png, id=768, 447.71265pt x 136.95164pt>
+<figs/stuff_vis.png, id=423, 447.71265pt x 136.95164pt>
 File: figs/stuff_vis.png Graphic file (type png)
 <use figs/stuff_vis.png>
 Package pdftex.def Info: figs/stuff_vis.png  used on input line 101.
 (pdftex.def)             Requested size: 433.62001pt x 132.64648pt.
- [25]
-<figs/ins_to_sem.png, id=778, 665.48625pt x 465.74pt>
+ [10]
+<figs/ins_to_sem.png, id=438, 665.48625pt x 465.74pt>
 File: figs/ins_to_sem.png Graphic file (type png)
 <use figs/ins_to_sem.png>
 Package pdftex.def Info: figs/ins_to_sem.png  used on input line 114.
 (pdftex.def)             Requested size: 346.89732pt x 242.77603pt.
-) [26] [27 <./figs/pascal/original/144.jpg> <./figs/pascal/before_sem/144.png> 
+) [11] [12 <./figs/pascal/original/144.jpg> <./figs/pascal/before_sem/144.png> 
 <./figs/pascal/before_ins/144.png> <./figs/pascal/after_sem/144.png> <./figs/pa
 scal/after_ins/144.png> <./figs/pascal/original/421.jpg> <./figs/pascal/before_
 sem/421.png> <./figs/pascal/before_ins/421.png> <./figs/pascal/after_sem/421.pn
@@ -995,32 +936,20 @@ riginal/184.jpg> <./figs/pascal/before_sem/184.png> <./figs/pascal/before_ins/1
 84.png> <./figs/pascal/after_sem/184.png> <./figs/pascal/after_ins/184.png> <./
 figs/pascal/original/226.jpg> <./figs/pascal/before_sem/226.png> <./figs/pascal
 /before_ins/226.png> <./figs/pascal/after_sem/226.png> <./figs/pascal/after_ins
-/226.png>] [28 <./figs/stuff_vis.png> <./figs/ins_to_sem.png>]
+/226.png>] [13 <./figs/stuff_vis.png> <./figs/ins_to_sem.png>]
 \openout2 = `chapters/Conclusion.aux'.
 
 
 (./chapters/Conclusion.tex
 Chapter 4.
-[29
+[14
 
 
 
-] [30]) [31]
+] [15]) [16]
 \openout2 = `chapters/References.aux'.
 
  (./chapters/References.tex (./thesis.bbl
-Missing character: There is no Ã in font ptmr7t!
-Missing character: There is no ¡ in font ptmr7t!
- [32
-
-
-
-]
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
- [33] [34]
-[35]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
@@ -1033,10 +962,15 @@ Missing character: There is no “ in font ptmri7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
- [36])) [37]
+ [17
+
+
+
+])) [18]
 \openout2 = `chapters/Appendix.aux'.
 
- (./chapters/Appendix.tex
+
+(./chapters/Appendix.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
@@ -1050,21 +984,21 @@ Missing character: There is no ˜ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-[38
+[19
 
 
 
-] [39] (./figs/algo.tex
+] [20] (./figs/algo.tex
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 2.
-) [40
+) [21
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
-) [41
+) [22
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 112.
@@ -1079,37 +1013,37 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 58B8E85E7DFF7565D8410D11FA41E31A;3964.
+(rerunfilecheck)             Checksum: 47A4F35FF821CE39DD4E217CED319D8C;3197.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 112.
  ) 
 Here is how much of TeX's memory you used:
- 10254 strings out of 494923
- 155390 string characters out of 6180743
- 268419 words of memory out of 5000000
- 13053 multiletter control sequences out of 15000+600000
- 24076 words of font info for 57 fonts, out of 8000000 for 9000
+ 9999 strings out of 494923
+ 151244 string characters out of 6180743
+ 265626 words of memory out of 5000000
+ 12918 multiletter control sequences out of 15000+600000
+ 20109 words of font info for 47 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,15n,45p,2027b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,13n,45p,1717b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
-i8a.pfb>
-Output written on thesis.pdf (53 pages, 3380523 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (34 pages, 1045296 bytes).
 PDF statistics:
- 987 PDF objects out of 1000 (max. 8388607)
- 837 compressed objects within 9 object streams
- 214 named destinations out of 1000 (max. 500000)
- 637 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 603 PDF objects out of 1000 (max. 8388607)
+ 489 compressed objects within 5 object streams
+ 113 named destinations out of 1000 (max. 500000)
+ 534 words of extra memory for PDF output out of 10000 (max. 10000000)
 

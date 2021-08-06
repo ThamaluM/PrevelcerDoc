@@ -6,50 +6,41 @@
 \BOOKMARK [0][-]{chapter*.6}{Contents}{}% 6
 \BOOKMARK [0][-]{chapter*.9}{Acronyms and Abbreviations}{}% 7
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 8
-\BOOKMARK [1][-]{section.1.1}{Problem and Scope}{chapter.1}% 9
-\BOOKMARK [1][-]{section.1.2}{Related Work}{chapter.1}% 10
-\BOOKMARK [2][-]{subsection.1.2.1}{Single Frame Detectors}{section.1.2}% 11
-\BOOKMARK [2][-]{subsection.1.2.2}{Single Object Trackers}{section.1.2}% 12
-\BOOKMARK [2][-]{subsection.1.2.3}{Joint Tracking and Detection}{section.1.2}% 13
-\BOOKMARK [2][-]{subsection.1.2.4}{Multi-Object Trackers}{section.1.2}% 14
-\BOOKMARK [2][-]{subsection.1.2.5}{BEV space and 3D tracking}{section.1.2}% 15
-\BOOKMARK [2][-]{subsection.1.2.6}{Panoptic Segmentation}{section.1.2}% 16
-\BOOKMARK [2][-]{subsection.1.2.7}{Conditional Random Fields}{section.1.2}% 17
-\BOOKMARK [1][-]{section.1.3}{Method of Investigation}{chapter.1}% 18
-\BOOKMARK [1][-]{section.1.4}{Principal Results of Investigation}{chapter.1}% 19
-\BOOKMARK [0][-]{chapter.2}{Methodology}{}% 20
-\BOOKMARK [1][-]{section.2.1}{Overview}{chapter.2}% 21
-\BOOKMARK [1][-]{section.2.2}{Multi Object Tracker}{chapter.2}% 22
-\BOOKMARK [2][-]{subsection.2.2.1}{LSTM network}{section.2.2}% 23
-\BOOKMARK [2][-]{subsection.2.2.2}{Appearance similarity}{section.2.2}% 24
-\BOOKMARK [2][-]{subsection.2.2.3}{Track Association}{section.2.2}% 25
-\BOOKMARK [2][-]{subsection.2.2.4}{Overall online tracking system}{section.2.2}% 26
-\BOOKMARK [2][-]{subsection.2.2.5}{Extensibility to BEV space}{section.2.2}% 27
-\BOOKMARK [2][-]{subsection.2.2.6}{LSTM based data association for end to end trainability}{section.2.2}% 28
-\BOOKMARK [1][-]{section.2.3}{Panoptic Segmentation}{chapter.2}% 29
-\BOOKMARK [2][-]{subsection.2.3.1}{Background: Conditional Random Fields}{section.2.3}% 30
-\BOOKMARK [2][-]{subsection.2.3.2}{Bipartite CRFs}{section.2.3}% 31
-\BOOKMARK [2][-]{subsection.2.3.3}{Semantic Component of the CRF}{section.2.3}% 32
-\BOOKMARK [2][-]{subsection.2.3.4}{Instance Component of the CRF}{section.2.3}% 33
-\BOOKMARK [2][-]{subsection.2.3.5}{Cross Potentials in the CRF}{section.2.3}% 34
-\BOOKMARK [2][-]{subsection.2.3.6}{Inference and Parameter Optimization}{section.2.3}% 35
-\BOOKMARK [2][-]{subsection.2.3.7}{BCRF in a Deep Network}{section.2.3}% 36
-\BOOKMARK [0][-]{chapter.3}{Results}{}% 37
-\BOOKMARK [1][-]{section.3.1}{Multi Object Tracking Evaluation}{chapter.3}% 38
-\BOOKMARK [2][-]{subsection.3.1.1}{Datasets and Evaluation metrics}{section.3.1}% 39
-\BOOKMARK [2][-]{subsection.3.1.2}{Evaluation}{section.3.1}% 40
-\BOOKMARK [2][-]{subsection.3.1.3}{Experiments to analyze the extensibility of the modules}{section.3.1}% 41
-\BOOKMARK [1][-]{section.3.2}{Panoptic Segmentation Evaluation}{chapter.3}% 42
-\BOOKMARK [2][-]{subsection.3.2.1}{Convergence of the Inference}{section.3.2}% 43
-\BOOKMARK [2][-]{subsection.3.2.2}{Bipartite Potentials Learning}{section.3.2}% 44
-\BOOKMARK [2][-]{subsection.3.2.3}{Results on the Pascal VOC Dataset}{section.3.2}% 45
-\BOOKMARK [2][-]{subsection.3.2.4}{Results on the COCO Dataset}{section.3.2}% 46
-\BOOKMARK [2][-]{subsection.3.2.5}{BCRF learns beyond simple logical mapping}{section.3.2}% 47
-\BOOKMARK [0][-]{chapter.4}{Discussion and Conclusion}{}% 48
-\BOOKMARK [1][-]{section.4.1}{Principles, Relationships and Generalizations inferred from results}{chapter.4}% 49
-\BOOKMARK [1][-]{section.4.2}{Problems and Exceptions to the Generalizations}{chapter.4}% 50
-\BOOKMARK [1][-]{section.4.3}{Agreements/Disagreements with previously published work}{chapter.4}% 51
-\BOOKMARK [0][-]{section.4.3}{References}{}% 52
-\BOOKMARK [0][-]{chapter*.25}{Appendix I}{}% 53
-\BOOKMARK [0][-]{chapter*.28}{Appendix II}{}% 54
-\BOOKMARK [0][-]{chapter*.29}{Appendix III}{}% 55
+\BOOKMARK [1][-]{section.1.1}{Literature Review}{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.1.1}{Pressure Ulcer Prevention}{section.1.1}% 10
+\BOOKMARK [2][-]{subsection.1.1.2}{Personal Risk Assessment and Documentation}{section.1.1}% 11
+\BOOKMARK [1][-]{section.1.2}{Requirement of A Health Information System}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.3}{Previous Research}{chapter.1}% 13
+\BOOKMARK [0][-]{chapter.2}{Methodology}{}% 14
+\BOOKMARK [1][-]{section.2.1}{Component Diagram}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.2}{Information system back-end}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.1}{Authentication and Authorization}{section.2.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.2}{Social Networking}{section.2.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.3}{Pressure data}{section.2.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.4}{Machine Learning}{section.2.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.5}{Scheduling}{section.2.2}% 21
+\BOOKMARK [2][-]{subsection.2.2.6}{Risk Assessment}{section.2.2}% 22
+\BOOKMARK [2][-]{subsection.2.2.7}{Ulcer documentation}{section.2.2}% 23
+\BOOKMARK [1][-]{section.2.3}{Mobile app}{chapter.2}% 24
+\BOOKMARK [1][-]{section.2.4}{Pressure Mat}{chapter.2}% 25
+\BOOKMARK [2][-]{subsection.2.4.1}{Individual sensor calibration}{section.2.4}% 26
+\BOOKMARK [2][-]{subsection.2.4.2}{Preparing Mat}{section.2.4}% 27
+\BOOKMARK [0][-]{chapter.3}{Results}{}% 28
+\BOOKMARK [1][-]{section.3.1}{Multi Object Tracking Evaluation}{chapter.3}% 29
+\BOOKMARK [2][-]{subsection.3.1.1}{Datasets and Evaluation metrics}{section.3.1}% 30
+\BOOKMARK [2][-]{subsection.3.1.2}{Evaluation}{section.3.1}% 31
+\BOOKMARK [2][-]{subsection.3.1.3}{Experiments to analyze the extensibility of the modules}{section.3.1}% 32
+\BOOKMARK [1][-]{section.3.2}{Panoptic Segmentation Evaluation}{chapter.3}% 33
+\BOOKMARK [2][-]{subsection.3.2.1}{Convergence of the Inference}{section.3.2}% 34
+\BOOKMARK [2][-]{subsection.3.2.2}{Bipartite Potentials Learning}{section.3.2}% 35
+\BOOKMARK [2][-]{subsection.3.2.3}{Results on the Pascal VOC Dataset}{section.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.2.4}{Results on the COCO Dataset}{section.3.2}% 37
+\BOOKMARK [2][-]{subsection.3.2.5}{BCRF learns beyond simple logical mapping}{section.3.2}% 38
+\BOOKMARK [0][-]{chapter.4}{Discussion and Conclusion}{}% 39
+\BOOKMARK [1][-]{section.4.1}{Principles, Relationships and Generalizations inferred from results}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.2}{Problems and Exceptions to the Generalizations}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.3}{Agreements/Disagreements with previously published work}{chapter.4}% 42
+\BOOKMARK [0][-]{section.4.3}{References}{}% 43
+\BOOKMARK [0][-]{chapter*.20}{Appendix I}{}% 44
+\BOOKMARK [0][-]{chapter*.23}{Appendix II}{}% 45
+\BOOKMARK [0][-]{chapter*.24}{Appendix III}{}% 46
