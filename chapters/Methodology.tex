@@ -8,42 +8,85 @@ An information system architecture that supports care planning of pressure ulcer
 	\item collecting risk assessment data
 	\item providing platform to report and document ulcers
 	\item networking related people
-	\item planning schedules
+	\item planning schedules.
 \end{itemize}
 
-Therefore our information system architecture is supported by pressure sensing mats and mobile app. Some standard risk assessment scales, ulcer documentation formats are added to the system with appropriate modifications. Additionally scalability, flexibility and cost-effectiveness are two other important characteristics of such system. Our initial scope was to build a pressure sensing mattress system that is capable of recommending optimal repositioning strategies based on bio-mechanical data. As there are no proper evaluation criteria to assess pressure ulcer  prevention and the existing bio-mechanical and pathological research in pressure ulcers are inconclusive, we constructed an information system that provide a platform to investigate pressure ulceration phenomenon while providing a tool for care planning by digitizing processes currently done in paper or not done in any systematic way. Existing theories can be used in our system to improve care planning within their limitation.
+Therefore our information system architecture is supported by pressure sensing mats and mobile apps. Some standard risk assessment scales, ulcer documentation formats are added to the system with appropriate modifications. Additionally scalability, flexibility and cost-effectiveness are two other important characteristics of such system. Our initial scope was to build a pressure sensing mattress system that is capable of recommending optimal repositioning strategies based on bio-mechanical data. As there are no proper evaluation criteria to assess pressure ulcer  prevention and the existing bio-mechanical and pathological research in pressure ulcers are inconclusive, we constructed an information system that provide a platform to investigate pressure ulceration phenomenon while providing a tool for care planning by digitizing processes currently done in paper or not done in any systematic way. Existing theories can be used in our system to improve care planning within their limitation.
 
-\section{Component Diagram}
+\section{Components and Functionality}
 
+There are three main components of our solution. 
+\begin{itemize}
+	\item Information System (Server and Backend)
+	\item Mobile App
+	\item Pressure sensing matress
+\end{itemize}
 
+The information system provides basic components of authentication, and data storage for pressure data, personal risk assessment data and ulcer documentation. It is consist of another supplementary subcomponent for machine learning models. The information system provides a RESTful API for mobile app clients and pressure sensing mats. App and pressure sensing mat can send and retrieve relavent information from the information system. The mobile app provides user interface for patients/guardians, caretakers and doctors to interacts with the system.
 
+The pressure mat consist of a sensor panel developed by a substrate of piezo-resistive material Velostat\textsuperscript{\textregistered}. The sensor readings are processed one cell by one in the ATMega32\textsuperscript{\textregistered} microcontroller and send to the information system using a NodeMCU/ESP8266\textsuperscript{\textregistered} via Wifi and internet. The information system is capable of integrating other available commercial pressure sensing mattresses without any change of its structure.
+
+In the central server of the information system these pressure data will be filtered and stored. The sleeping postures and ulceration points are identified by these data and pressure at these points is saved in a seperate table using Neural Network Models.
+
+There is a notificaation system that sends notifications to the caretakers of patients instructing the repostitioning plan.
 
 \section{Information system back-end}
 
+Information system backend is written in Python using the enterprise level web fullstack designing framework Django\textsuperscript{\textregistered} and hosted in Heroku\textsuperscript{\textregistered} cloud platform. As the database management system we choose Postgresql which is a SQL based relational database management system. All the static media files are stored in a Cloudinary S3 bucket\textsuperscript{\textregistered}. APIs are created from django-rest-framework library and Firebase\textsuperscript{\textregistered} is used to communicate with mobile apps with push notifications. 
 
-Information system backend is written in python using the enterprise level web fullstack designing framework Django and hosted in Heroku cloud platform. Postegresql an enterprise level SQL based relational database management tool is used as the database management system. All the static media files are stored in a Cloudinary S3 bucket. APIs are created from django-rest-framework platform and firebase is used to communicate with mobile apps as push notifications. 
+The web application considered on Django apps (submodules) for each main functionality.
+\begin{enumerate}
+	\item Authentication and User Profiles
+	\item Social connection handling
+	\item Pressure data
+	\item Personal Risk Analysis
+	\item Ulcer Documentaion
+\end{enumerate}
+
+Neural network models are build and trained using Tensorlfow\textsuperscript{\textregistered} and Keras\textsuperscript{\textregistered} libraries and hosted in Heroku\textsuperscript{\textregistered} using popular python backend microframework Flask\textsuperscript{\textregistered}.
+
 
 \subsection{Authentication and Authorization}
 
-There are user accounts to authenticate the users and there are three groups as doctors, caretakers and patients. These roles and accounts are used to authorize access to particular components. Only users have write or update permission to their personal information, care takers can update there risk assessment data while doctors can update ulcer reporting documentation as well as risk assessment data. Even latter data only accessible to caretakers or doctors who are assigned to relevant patients.
+There are user accounts to authenticate the users and there are three groups as doctors, caretakers and patients. These roles and accounts are used to authorize access to particular components. Only users have write or update permission to their personal information, care takers can update there risk assessment data while doctors can update ulcer reporting documentation as well as risk assessment data. Even latter data only accessible to caretakers or doctors who are assigned to relevant patients. Token authentication is used to authenticate access.
 
+To create and account a user is requested to add his username and password and there after he has to use that username and password to log in. Users can update their profile with basic details and profile photos.
 
 \subsection{Social Networking}
 
-All doctors, caretakers, patients can be see each other in search lists. The connection between the users are established via request and confirm mechanism. There are request, show, accept, reject, delete functionalities for a request.
+All doctors, caretakers, patients can be see each other in search lists. The connection between the users are established via request and confirm mechanism. There are send, show, accept, reject, delete functionalities for a request. Doctors and caretakers can only access data of a patient only if they has been connected to the particular patient. Users can remove others from there connection list. 
 
 \subsection{Pressure data}
 
-Pressure data sent from pressure mats are stored in the database via the server. These data are further analysed with Neural Network Models to find ulceration points. Pressure data is stored in the format 
+Pressure data sent from pressure mats are stored in the database via the central server. These data are further analysed with Neural Network Models to find ulceration points. Pressure data is stored in the format \textbf{lx, ly, x, y, p, n} format. 
 
-lx, ly, x, y, p, n format. This format allows us to send cell readings one by one and flexible the system for any resolution. This pressure data is used to create the mat.
+Here,
+
+\begin{description}
+	\item[lx]: Number of cells over x axis of the mat 
+	\item[ly]: Number of cells over y axis of the mat 
+	\item[x]: x coordinate of the current cell 
+	\item[y]: y coordinate of the current cell  
+	\item[p]: Pressure at the (x,y) cell
+	\item[n]: frame number (Reading complete mat is a one frame)  
+\end{description}
+
+This format supports to send cells one by one therefore we can capture even a partial reading. This format do not restrict the resolution to a particular value we decide so changing lx and ly of the request any available pressure sensing mattress can be integrated without any structural change of the system. 
 
 \subsection{Machine Learning}
 
-There are two machine learning models to analyze pressure data. One is to identify pressure and the other is to identify ulceration points
+There are two machine learning models to analyze pressure data. One is to identify posture and the other is to identify ulceration points. Since the ulceration occurs in these particular sites it is important to identify pressure at those locations. To locate this points on the pressure mat and to identify repositioning we should find postures of the patient from pressure data. 
+We used a dataset by university of Dallas to train the neural networks and we used data preprocessing and augmentations to improve the model.
 
-Neural network training we used a dataset by university of Dallas and we used data preprocessing and augmentations.
+\subsubsection{Posture Detection Model}
 
+Posture detection model is a sequential model with several convolution and pooling layers before final dense layers. 
+
+\begin{description}
+	\item[Validation]
+	\item[preprocessing]
+	\item[Data Augmentation]   
+\end{description}
 
 \subsection{Scheduling}
 
