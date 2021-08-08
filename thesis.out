@@ -19,28 +19,19 @@
 \BOOKMARK [2][-]{subsection.2.2.3}{Pressure data}{section.2.2}% 19
 \BOOKMARK [2][-]{subsection.2.2.4}{Machine Learning}{section.2.2}% 20
 \BOOKMARK [2][-]{subsection.2.2.5}{Scheduling}{section.2.2}% 21
-\BOOKMARK [2][-]{subsection.2.2.6}{Risk Assessment}{section.2.2}% 22
+\BOOKMARK [2][-]{subsection.2.2.6}{Personal Risk Assessment}{section.2.2}% 22
 \BOOKMARK [2][-]{subsection.2.2.7}{Ulcer documentation}{section.2.2}% 23
 \BOOKMARK [1][-]{section.2.3}{Mobile app}{chapter.2}% 24
 \BOOKMARK [1][-]{section.2.4}{Pressure Mat}{chapter.2}% 25
-\BOOKMARK [2][-]{subsection.2.4.1}{Individual sensor calibration}{section.2.4}% 26
+\BOOKMARK [2][-]{subsection.2.4.1}{Calibration of the Material}{section.2.4}% 26
 \BOOKMARK [2][-]{subsection.2.4.2}{Preparing Mat}{section.2.4}% 27
-\BOOKMARK [0][-]{chapter.3}{Results}{}% 28
-\BOOKMARK [1][-]{section.3.1}{Multi Object Tracking Evaluation}{chapter.3}% 29
-\BOOKMARK [2][-]{subsection.3.1.1}{Datasets and Evaluation metrics}{section.3.1}% 30
-\BOOKMARK [2][-]{subsection.3.1.2}{Evaluation}{section.3.1}% 31
-\BOOKMARK [2][-]{subsection.3.1.3}{Experiments to analyze the extensibility of the modules}{section.3.1}% 32
-\BOOKMARK [1][-]{section.3.2}{Panoptic Segmentation Evaluation}{chapter.3}% 33
-\BOOKMARK [2][-]{subsection.3.2.1}{Convergence of the Inference}{section.3.2}% 34
-\BOOKMARK [2][-]{subsection.3.2.2}{Bipartite Potentials Learning}{section.3.2}% 35
-\BOOKMARK [2][-]{subsection.3.2.3}{Results on the Pascal VOC Dataset}{section.3.2}% 36
-\BOOKMARK [2][-]{subsection.3.2.4}{Results on the COCO Dataset}{section.3.2}% 37
-\BOOKMARK [2][-]{subsection.3.2.5}{BCRF learns beyond simple logical mapping}{section.3.2}% 38
-\BOOKMARK [0][-]{chapter.4}{Discussion and Conclusion}{}% 39
-\BOOKMARK [1][-]{section.4.1}{Principles, Relationships and Generalizations inferred from results}{chapter.4}% 40
-\BOOKMARK [1][-]{section.4.2}{Problems and Exceptions to the Generalizations}{chapter.4}% 41
-\BOOKMARK [1][-]{section.4.3}{Agreements/Disagreements with previously published work}{chapter.4}% 42
-\BOOKMARK [0][-]{section.4.3}{References}{}% 43
-\BOOKMARK [0][-]{chapter*.21}{Appendix I}{}% 44
-\BOOKMARK [0][-]{chapter*.24}{Appendix II}{}% 45
-\BOOKMARK [0][-]{chapter*.25}{Appendix III}{}% 46
+\BOOKMARK [2][-]{subsection.2.4.3}{Sensor reading processing and communication}{section.2.4}% 28
+\BOOKMARK [0][-]{chapter.3}{Results}{}% 29
+\BOOKMARK [0][-]{chapter.4}{Discussion and Conclusion}{}% 30
+\BOOKMARK [1][-]{section.4.1}{Principles, Relationships and Generalizations inferred from results}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.2}{Problems and Exceptions to the Generalizations}{chapter.4}% 32
+\BOOKMARK [1][-]{section.4.3}{Agreements/Disagreements with previously published work}{chapter.4}% 33
+\BOOKMARK [0][-]{section.4.3}{References}{}% 34
+\BOOKMARK [0][-]{chapter*.26}{Appendix I}{}% 35
+\BOOKMARK [0][-]{chapter*.29}{Appendix II}{}% 36
+\BOOKMARK [0][-]{chapter*.30}{Appendix III}{}% 37
