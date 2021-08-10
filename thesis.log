@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.8.6)  10 AUG 2021 03:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.8.6)  10 AUG 2021 23:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -551,9 +551,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no Â in font ptmr7t!
+Missing character: There is no   in font ptmr7t!
+Missing character: There is no Â in font ptmr7t!
+Missing character: There is no   in font ptmr7t!
+Missing character: There is no Â in font ptmr7t!
+Missing character: There is no   in font ptmr7t!
+Missing character: There is no Â in font ptmr7t!
+Missing character: There is no   in font ptmr7t!
 ) [4
 
 
@@ -611,19 +616,19 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  (./chapters/Introduction.tex
 Chapter 1.
 (./figs/pressure-sore-stages.tex
-<figs/pressure-sore-stages.jpg, id=266, 468.75125pt x 472.76625pt>
+<figs/pressure-sore-stages.jpg, id=265, 468.75125pt x 472.76625pt>
 File: figs/pressure-sore-stages.jpg Graphic file (type jpg)
 <use figs/pressure-sore-stages.jpg>
 Package pdftex.def Info: figs/pressure-sore-stages.jpg  used on input line 4.
 (pdftex.def)             Requested size: 216.81pt x 218.66539pt.
 ) (./figs/reswick-rojers.tex
-<figs/reswick_rojers.jpg, id=267, 429.605pt x 299.1175pt>
+<figs/reswick_rojers.jpg, id=266, 429.605pt x 299.1175pt>
 File: figs/reswick_rojers.jpg Graphic file (type jpg)
 <use figs/reswick_rojers.jpg>
 Package pdftex.def Info: figs/reswick_rojers.jpg  used on input line 4.
 (pdftex.def)             Requested size: 303.53267pt x 211.33884pt.
 ) (./figs/ulceration_points.tex
-<figs/ulceration-points.jpg, id=268, 279.0425pt x 181.67876pt>
+<figs/ulceration-points.jpg, id=267, 279.0425pt x 181.67876pt>
 File: figs/ulceration-points.jpg Graphic file (type jpg)
 <use figs/ulceration-points.jpg>
 Package pdftex.def Info: figs/ulceration-points.jpg  used on input line 4.
@@ -646,7 +651,7 @@ Chapter 2.
 
 
 ] (./figs/component-diagram.tex
-<figs/component-diagram.png, id=294, 1371.1225pt x 770.88pt>
+<figs/component-diagram.png, id=293, 1371.1225pt x 770.88pt>
 File: figs/component-diagram.png Graphic file (type png)
 <use figs/component-diagram.png>
 Package pdftex.def Info: figs/component-diagram.png  used on input line 4.
@@ -655,25 +660,25 @@ Package pdftex.def Info: figs/component-diagram.png  used on input line 4.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
  (./figs/functional_block.tex
-<figs/functional_block.png, id=296, 1371.1225pt x 541.02126pt>
+<figs/functional_block.png, id=295, 1371.1225pt x 541.02126pt>
 File: figs/functional_block.png Graphic file (type png)
 <use figs/functional_block.png>
 Package pdftex.def Info: figs/functional_block.png  used on input line 4.
 (pdftex.def)             Requested size: 390.25536pt x 153.98627pt.
 ) [6 <./figs/component-diagram.png>] [7 <./figs/functional_block.png>] [8] (./figs/posturemodel.tex
-<figs/posturemodel.png, id=319, 505.89pt x 1295.84125pt>
+<figs/posturemodel.png, id=318, 505.89pt x 1295.84125pt>
 File: figs/posturemodel.png Graphic file (type png)
 <use figs/posturemodel.png>
 Package pdftex.def Info: figs/posturemodel.png  used on input line 4.
 (pdftex.def)             Requested size: 130.08733pt x 333.21324pt.
 ) [9 <./figs/posturemodel.png>] (./figs/ulceration-point.tex
-<figs/ulceration_point.png, id=326, 932.48375pt x 1295.84125pt>
+<figs/ulceration_point.png, id=325, 932.48375pt x 1295.84125pt>
 File: figs/ulceration_point.png Graphic file (type png)
 <use figs/ulceration_point.png>
 Package pdftex.def Info: figs/ulceration_point.png  used on input line 4.
 (pdftex.def)             Requested size: 260.17465pt x 361.54784pt.
 ) (./figs/schedule.tex
-<figs/schedule.png, id=327, 1364.09625pt x 438.63875pt>
+<figs/schedule.png, id=326, 1364.09625pt x 438.63875pt>
 File: figs/schedule.png Graphic file (type png)
 <use figs/schedule.png>
 Package pdftex.def Info: figs/schedule.png  used on input line 4.
@@ -684,19 +689,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--164
  []
 
 [12 <./figs/schedule.png>] [13] [14] (./figs/utm.tex
-<figs/utm.jpg, id=357, 961.5925pt x 1284.8pt>
+<figs/utm.jpg, id=356, 961.5925pt x 1284.8pt>
 File: figs/utm.jpg Graphic file (type jpg)
 <use figs/utm.jpg>
 Package pdftex.def Info: figs/utm.jpg  used on input line 4.
 (pdftex.def)             Requested size: 216.81pt x 289.67526pt.
 ) (./figs/deadweight.tex
-<figs/deadweight.jpg, id=358, 770.88pt x 1027.84pt>
+<figs/deadweight.jpg, id=357, 770.88pt x 1027.84pt>
 File: figs/deadweight.jpg Graphic file (type jpg)
 <use figs/deadweight.jpg>
 Package pdftex.def Info: figs/deadweight.jpg  used on input line 4.
 (pdftex.def)             Requested size: 216.81pt x 289.07928pt.
 ) (./figs/pressure_mat.tex
-<figs/pressure_mat.png, id=359, 778.91pt x 573.14125pt>
+<figs/pressure_mat.png, id=358, 778.91pt x 573.14125pt>
 File: figs/pressure_mat.png Graphic file (type png)
 <use figs/pressure_mat.png>
 Package pdftex.def Info: figs/pressure_mat.png  used on input line 4.
@@ -707,13 +712,13 @@ Package pdftex.def Info: figs/pressure_mat.png  used on input line 4.
  (./chapters/Results.tex
 Chapter 3.
 (./figs/mat_frames.tex
-<figs/mat_frames.png, id=373, 1260.71pt x 458.71375pt>
+<figs/mat_frames.png, id=372, 1260.71pt x 458.71375pt>
 File: figs/mat_frames.png Graphic file (type png)
 <use figs/mat_frames.png>
 Package pdftex.def Info: figs/mat_frames.png  used on input line 4.
 (pdftex.def)             Requested size: 433.62001pt x 157.77345pt.
 ) (./figs/ml_result.tex
-<figs/ml_result.png, id=374, 1371.1225pt x 638.385pt>
+<figs/ml_result.png, id=373, 1371.1225pt x 638.385pt>
 File: figs/ml_result.png Graphic file (type png)
 <use figs/ml_result.png>
 Package pdftex.def Info: figs/ml_result.png  used on input line 4.
@@ -793,10 +798,10 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  38i,11n,41p,1761b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (37 pages, 2398420 bytes).
+Output written on thesis.pdf (37 pages, 2396831 bytes).
 PDF statistics:
- 494 PDF objects out of 1000 (max. 8388607)
- 417 compressed objects within 5 object streams
+ 493 PDF objects out of 1000 (max. 8388607)
+ 416 compressed objects within 5 object streams
  107 named destinations out of 1000 (max. 500000)
  354 words of extra memory for PDF output out of 10000 (max. 10000000)
 
