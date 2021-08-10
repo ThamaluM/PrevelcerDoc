@@ -21,9 +21,8 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{DeepSiam:geometry}
-J.~F. Arsalan~Mousavian, Dragomir~Anguelov, ``{3D Bounding Box Estimation Using
-  Deep Learning and Geometry},'' in \emph{Conference on Computer Vision and
-  Pattern Recognition (CVPR)}, 2017.
+\bibitem{Anurag17}
+A.~Arnab and P.~H. Torr, ``{Pixelwise Instance Segmentation with a Dynamically
+  Instantiated Network},'' in \emph{CVPR}, 2017.
 
 \end{thebibliography}
