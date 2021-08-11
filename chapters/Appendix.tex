@@ -2,7 +2,34 @@
 \addcontentsline{toc}{chapter}{Appendix I}
 \label{chapter:appendix1}
 
-Risk estimagtion by pressure data
+\textbf{Ulceration risk of pressure-time relation}
+
+\begin{equation}
+    P(T) = \frac{P_{max}-P_{min}}{1 + e^{\lambda(T-T_0)}} + P_{min}
+\end{equation}
+
+Here,
+
+\begin{align*}
+    P_{max} &= 31 kPa\\
+    P_{min} &= 8 kPa\\
+    \lambda &= 0.15 min^{-1}\\
+    T_0     &= 95 min
+\end{align*}
+
+
+\begin{equation}
+    T_{max}(P) = 
+    \begin{cases}
+        \infty & P < P_{min}\\
+        0  & P > P_{max}\\
+        T_0 + \frac{1}{\lambda}\left( \frac{P_{max}-P_{min}}{P-P_{min}} - 1 \right) & P_{min} < P < P_{max}
+    \end{cases}
+\end{equation}
+
+\begin{equation}
+    \delta R = \frac{\delta t}{T_{max}(P)}
+\end{equation}
 
 
 \chapter*{Appendix II}
@@ -10,6 +37,8 @@ Risk estimagtion by pressure data
 \label{chapter:appendix2}
 
 Schematic of the pressure mat
+\input{figs/schematic1.tex}
+
 
 % \textbf{Mean Field Algorithm} \\
 % \input{figs/algo.tex}
