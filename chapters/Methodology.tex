@@ -3,7 +3,7 @@
 
 An information system architecture that supports care planning of pressure ulcers requires certain basic functionalities such as 
 \begin{itemize}
-	\item capturing bio-mechanical data of the body
+	\item capturing biomechanical data of the body
 	\item Analyzing those data
 	\item collecting risk assessment data
 	\item providing platform to report and document ulcers
@@ -11,14 +11,14 @@ An information system architecture that supports care planning of pressure ulcer
 	\item planning schedules.
 \end{itemize}
 
-Therefore our information system architecture is supported by pressure sensing mats and mobile apps. Some standard risk assessment scales, ulcer documentation formats are added to the system with appropriate modifications. Additionally scalability, flexibility and cost-effectiveness are two other important characteristics of such system. Our initial scope was to build a pressure sensing mattress system that is capable of recommending optimal repositioning strategies based on bio-mechanical data. As there are no proper evaluation criteria to assess pressure ulcer  prevention and the existing bio-mechanical and pathological research in pressure ulcers are inconclusive, we constructed an information system that provide a platform to investigate pressure ulceration phenomenon while providing a tool for care planning by digitizing processes currently done in paper or not done in any systematic way. Existing theories can be used in our system to improve care planning within their limitation.
+Therefore our information system architecture is supported by pressure-sensing mats and mobile apps. Some standard risk assessment scales, ulcer documentation formats are added to the system with appropriate modifications. Additionally, scalability, flexibility and cost-effectiveness are two other important characteristics of such a system. Our initial scope was to build a pressure sensing mattress system that is capable of recommending optimal repositioning strategies based on biomechanical data. As there are no proper evaluation criteria to assess pressure ulcer prevention and the existing biomechanical and pathological research in pressure ulcers are inconclusive, we constructed an information system that provides a platform to investigate pressure ulceration phenomenon while providing a tool for care planning by digitizing processes currently done in paper or not done in any systematic way. Existing theories can be used in our system to improve care planning within their limitation.
 
 \section{Expected Deliverables}
 \begin{enumerate}
-	\item Low-cost sensor panel to measure magnitude and duration of pressure at point of contact
+	\item Low-cost sensor panel to measure magnitude and duration of pressure at the point of contact
 	\item Information system architecture for continuous pressure monitoring, ulcer documentation and risk assessment.
 	\item Posture and ulceration point detection by pressure maps to enhance repositioning plan.
-	\item Mobile App based notification system alarming care-takers about repositioning time
+	\item Mobile App based notification system alarming caretakers about repositioning time
 \end{enumerate}
 
 \section{Components and Functionality}
@@ -31,20 +31,20 @@ There are three main components of our solution.
 \end{itemize}
 
 \input{figs/component-diagram.tex}
-The information system provides basic components of authentication, and data storage for pressure data, personal risk assessment data and ulcer documentation. It is consist of another supplementary sub-component for machine learning models. The information system provides a RESTful API for mobile app clients and pressure sensing mats. App and pressure sensing mat can send and retrieve relevant information from the information system. The mobile app provides user interface for patients/guardians, caretakers and doctors to interacts with the system.
+The information system provides basic components of authentication, and data storage for pressure data, personal risk assessment data and ulcer documentation. It is consist of another supplementary sub-component for machine learning models. The information system provides a RESTful API for mobile app clients and pressure sensing mats. App and pressure sensing mat can send and retrieve relevant information from the information system. The mobile app provides a user interface for patients/guardians, caretakers and doctors to interacts with the system.
 
-The pressure mat consist of a sensor panel developed by a substrate of piezo-resistive material Velostat\textsuperscript{\textregistered}. The sensor readings are processed one cell by one in the ATMega32\textsuperscript{\textregistered} microcontroller and send to the information system using a NodeMCU/ESP8266\textsuperscript{\textregistered} via WiFi and internet. The information system is capable of integrating other available commercial pressure sensing mattresses without any change of its structure.
+The pressure mat consists of a sensor panel developed by a substrate of piezoresistive material Velostat\textsuperscript{\textregistered}. The sensor readings are processed one cell by one in the ATMega32\textsuperscript{\textregistered} microcontroller and send to the information system using a NodeMCU/ESP8266\textsuperscript{\textregistered} via WiFi and the internet. The information system is capable of integrating other available commercial pressure sensing mattresses without any change of their structure.
 
-In the central server of the information system these pressure data will be filtered and stored. The sleeping postures and ulceration points are identified by these data and pressure at these points is saved in a separate table using Neural Network Models.
+In the central server of the information system, these pressure data will be filtered and stored. The sleeping postures and ulceration points are identified by these data and pressure at these points is saved in a separate table using Neural Network Models.
 
-There is a notificaation system that sends notifications to the caretakers of patients instructing the repostitioning plan.
+There is a notification system that sends notifications to the caretakers of patients instructing the repositioning plan.
 \input{figs/functional_block}
 
 \section{Information system back-end}
 
-Information system backend is written in Python using the enterprise level web fullstack designing framework Django\textsuperscript{\textregistered} and hosted in Heroku\textsuperscript{\textregistered} cloud platform. As the database management system we choose Postgresql which is a SQL based relational database management system. All the static media files are stored in a Cloudinary S3 bucket\textsuperscript{\textregistered}. APIs are created from django-rest-framework library and Firebase\textsuperscript{\textregistered} is used to communicate with mobile apps with push notifications. 
+Information system backend is written in Python using the enterprise level full stack web designing framework Django\textsuperscript{\textregistered} and hosted in Heroku\textsuperscript{\textregistered} cloud platform. As the database management system, we choose Postgresql which is a SQL based relational database management system. All the static media files are stored in a Cloudinary S3 bucket\textsuperscript{\textregistered}. APIs are created from the django-rest-framework library and Firebase\textsuperscript{\textregistered} is used to communicate with mobile apps with push notifications. 
 
-The web application considered on Django apps (sub-modules) for each main functionality.
+The web application is considered on Django apps (sub-modules) for each main functionality.
 \begin{enumerate}
 	\item Authentication and User Profiles
 	\item Social connection handling
@@ -58,13 +58,13 @@ Neural network models are build and trained using Tensorfow\textsuperscript{\tex
 
 \subsection{Authentication and Authorization}
 
-There are user accounts to authenticate the users and there are three groups as doctors, caretakers and patients. These roles and accounts are used to authorize access to particular components. Only users have write or update permission to their personal information, care takers can update there risk assessment data while doctors can update ulcer reporting documentation as well as risk assessment data. Even latter data only accessible to caretakers or doctors who are assigned to relevant patients. Token authentication is used to authenticate access.
+There are user accounts to authenticate the users and there are three user groups as doctors, caretakers and patients. These roles and accounts are used to authorize access to particular components. Users have permission to update their personal information, caretakers can update their risk assessment data and doctors can update ulcer reporting documentation as well as risk assessment data. Even later data is only accessible to caretakers or doctors who are assigned to relevant patients. Token authentication is used to authenticate access.
 
-To create and account a user is requested to add his username and password and there after he has to use that username and password to log in. Users can update their profile with basic details and profile photos.
+To create an account a user is requested to add his username and password and thereafter he has to use that username and password to log in. Users can update their profiles with basic details and profile photos.
 
 \subsection{Social Networking}
 
-All doctors, caretakers, patients can be see each other in search lists. The connection between the users are established via request and confirm mechanism. There are send, show, accept, reject, delete functionalities for a request. Doctors and caretakers can only access data of a patient only if they has been connected to the particular patient. Users can remove others from there connection list. 
+All doctors, caretakers, patients can see each other in search lists. The connection between the users is established via request and confirm mechanism. There are send, show, accept, reject, delete functionalities for a request. Doctors and caretakers can only access the data of a patient only if they have been connected to the particular patient. Users can remove others from their connection list. 
 
 \subsection{Pressure data}
 
@@ -81,39 +81,39 @@ Here,
 	\item[n]: frame number (Reading complete mat is a one frame)  
 \end{description}
 
-This format supports to send cells one by one therefore we can capture even a partial reading. This format do not restrict the resolution to a particular value we decide so changing lx and ly of the request any available pressure sensing mattress can be integrated without any structural change of the system. 
+This format supports sending measurements of cells one by one therefore we can capture even a partial reading. This format does not restrict the resolution to a particular value we decide so changing lx and ly of the request any available pressure sensing mattress can be integrated without any structural change of the system. 
 
 \subsection{Machine Learning}
 
-There are two machine learning models to analyze pressure data. One is to identify posture and the other is to identify ulceration points. Since the ulceration occurs in these particular sites it is important to identify pressure at those locations. To locate this points on the pressure mat and to identify repositioning we should find postures of the patient from pressure data. 
-We used a dataset by university of Dallas to train the neural networks and we used data preprocessing and augmentations to improve the model. There are 13 people in 18 postures (5 major postures supine, left yearning, right yearning, left fetal, right fetal and there slight varaiations with rolling angle and using pillows as wedges.) There are collection of pressure distribution measured by a commercial pressure measuring mattress for 2 mins which is roughly 120 frames for each. The resolution is 64 $\times$ 32.
+There are two machine learning models to analyze pressure data. One is to identify posture and the other is to identify ulceration points. Since the ulceration occurs in these particular sites it is important to identify pressure at those locations. To locate these points on the pressure mat and to identify repositioning we should find postures of the patient from pressure data. 
+We used a dataset from the University of Dallas to train the neural networks and we used data preprocessing and augmentations to improve the model. There are 13 people in 18 postures (5 major postures supine, left yearning, right yearning, left fetal, right fetal and there slight variations with rolling angle and using pillows as wedges.) There is a collection of pressure distribution measured by a commercial pressure measuring mattress for 2 mins which is roughly 120 frames for each. The resolution is 64 $\times$ 32.
 
 \subsubsection{Posture Detection Model}
 
-Posture detection model is a sequential model with several convolution and pooling layers before final dense layers. When the input pressure image is given the model outputs the corresponding name of the sleeping posture.
+The posture detection model is a sequential model with several convolution and pooling layers before the final dense layers. When the input pressure image is given the model outputs the corresponding name of the sleeping posture.
 \input{figs/posturemodel}
 
 \begin{description}
-	\item[Validation] The dataset was divided into a training and holdout set such that data from 9 persons for train and data from 4 persons for holdout.
-	\item[preprocessing] The pressure images are resized to 32 $\times$ 16, Gaussian noise of variation of 0.08 is added and finally Gaussian filter of variation of 0.5 is applied. This adding extra noise is supposed to regularize the neural network to work in more realistic environments with low cost pressure mattresses.
-	\item[Data Augmentation]  Pressure images are rotates in random angles between by -150 to -150 and Gaussian Noise of variance of 0.1 is added.	
+	\item[Validation] The dataset was divided into a training and holdout set such that data from 9 persons for train and data from 4 persons for the holdout.
+	\item[preprocessing] The pressure images are resized to 32 $\times$ 16, Gaussian noise of variation of 0.08 is added and finally, Gaussian filter of variation of 0.5 is applied. This adding extra noise is supposed to regularize the neural network to work in more realistic environments with low-cost pressure mattresses.
+	\item[Data Augmentation]  Pressure images are rotated in random angles between -150 to -150 and Gaussian Noise of variance of 0.1 is added.	
 \end{description}
 
-The 5 labels for supine, left yearning, right yearaning, left fetal and right fetal are onehot encoded. 
+The 5 labels for supine, left yearning, right yearning, left fetal and right fetal are one-hot encoded. 
 
-Neural network provided 92.45\% holdout set accuracy.
+The neural network provided 92.45\% holdout set accuracy.
 
 
 \subsubsection{Ulceration Point Detection Model}
 
-The same dataset was used to train the neural network model for ulceration point detection. We manually created bounding boxes for ulceration points using the annotator tool Labelbox\textsuperscript{\textregistered}. Then we preprocessed images likewise in the previous model. \input{figs/ulceration-point} The four parameters (two coordinates of the upper left corner of the bounding box, height and width) were used to train the model with a mean squared error loss function. There are two inputs to the model. The pressure image and the name of the ulceration point we consider (onehot encoded). Then the model outputs four parameters for the bounding box. 
+The same dataset was used to train the neural network model for ulceration point detection. We manually created bounding boxes for ulceration points using the annotator tool Labelbox\textsuperscript{\textregistered}. Then we preprocessed images likewise in the previous model. \input{figs/ulceration-point} The four parameters (two coordinates of the upper left corner of the bounding box, height and width) were used to train the model with a mean squared error loss function. There are two inputs to the model. The pressure image and the name of the ulceration point we consider (one-hot encoded). Then the model outputs four parameters for the bounding box. 
 
 
 \subsection{Scheduling}
 
-Usually 2h recommendation period for any posture is used an there is no particular order of posture order. However the researchers of University of Dallas tried to find a reposition schedule based on pressure distribution. Unfortunately there risk assessment metric is based on data from closely related research for slightly different problems and their final result is depend on ad-hoc assumptions they used. 
+Usually, 2h recommendation period for any posture is used and there is no particular order of posture order. However, the researchers of the University of Dallas tried to find a repositioning schedule based on pressure distribution. Unfortunately there risk assessment metric is based on data from closely related research for slightly different problems and their final result is dependent on ad-hoc assumptions they used. 
 
-In summary if we put the outline of their research in perspective it states that the supine posture is more risky as the both sides of the body is subjected to pressure. Although a side of body subjected to more pressure in left or right posture that is a complete relieving phase for the other side of the body. Although we hessitate about the validity of their arbitrary risk metric and ad-hoc assumption we decided to use their result and recommend a repositioning plan as follows. \input{figs/schedule}
+In summary, if we put the outline of their research in perspective it states that the supine posture is riskier as both sides of the body are subjected to pressure. Although a side of the body is subjected to more pressure in a left or right posture that is a complete relieving phase for the other side of the body. Although we hesitate about the validity of their arbitrary risk metric and ad-hoc assumption we decided to use their result and recommend a repositioning plan as follows. \input{figs/schedule}
 
 \begin{enumerate}
 	\item Right Yearning - 3 h
@@ -123,13 +123,13 @@ In summary if we put the outline of their research in perspective it states that
 	\item Right Fetal - 3 h
 \end{enumerate}
 
-The left and right postures should be alternatively applied but we do not distinguish between yearning and fetal. As this intervals are below the range of NICE guidelines it could be justified to use these intervals. 
+The left and right postures should be alternatively applied but we do not distinguish between yearning and fetal. As these intervals are below the range of NICE guidelines it could be justified to use these intervals. 
 
 \subsection{Personal Risk Assessment}
 
-We considered two existing personal risk assessment scales Braden scale and Waterloo scale. The information system captures data relevant to both scales and calculate corresponding metrics. 
+We considered two existing personal risk assessment scales Braden scale and the Waterlow scale. The information system captures data relevant to both scales and calculates corresponding metrics. 
 
-The personal risk assessment forms contains following data and expected to be filled by a health care professional (a doctor or a nurse). 
+The personal risk assessment forms contain the following data and are expected to be filled by a health care professional (a doctor or a nurse). 
 
 \begin{description}
 	\item[Assessed By]: The doctor or the caretaker (nurse) assessed personal risk
@@ -150,9 +150,9 @@ These details should be filled as 1,2,3,4 according to the Braden scale guidelin
 	\item[Friction and Shear]     
 \end{description}
 
-Explicit definition of 1,2,3,4 levels for each category is given in the Braden scale guideline (which is showed by an information box in the mobile app.)
+An explicit definition of 1,2,3,4 level for each category is given in the Braden scale guideline (which is showed by an information box in the mobile app.)
 
-According to the total score the patients are classified into four risk categories.
+According to the total score, the patients are classified into four risk categories.
 
 
 \begin{tabular}{l r}
@@ -177,7 +177,7 @@ These are some other important risk factors (Yes/No binary options).
 
 \subsection{Ulcer documentation}
 
-Documenting existing ulcers is an important concern. Treatments are based on proper documentation. This includes basic details related to the wound, surrounding skin and conditions of the patient. We adopted basic components from NPUAP (National Pressure Ulcer Advisory Panel) guidelines and SOS (State of Oklahoma) toolkit to prepare our documentation patteren. We discussed the current state of pressure ulcer documentation with a medical practitioner in Sri Lanka and remove overcomplicating components from these two guidelines. Then we add several additional components and alter the terminology in order to make compatible with medical terminology used in Sri Lanka. Some of the components we introduce here are not currently documented in Sri Lanka. 
+Documenting existing ulcers is an important concern. Treatments are based on proper documentation. This includes basic details related to the wound, surrounding skin and conditions of the patient. We adopted basic components from NPUAP (National Pressure Ulcer Advisory Panel) guidelines and the SOS (State of Oklahoma) toolkit to prepare our documentation pattern. We discussed the current state of pressure ulcer documentation with a medical practitioner in Sri Lanka and remove over-complicating components from these two guidelines. Then we add several additional components and alter the terminology to make it compatible with the medical terminology used in Sri Lanka. Some of the components we introduce here are not currently documented in Sri Lanka. 
 
 \begin{description}	
 	\item[Reported by]: The doctor that reports the ulcer
@@ -222,38 +222,38 @@ Mobile app provides a user interface for basic functionalities of the system. Th
 	\item Notification
 \end{itemize}
 
-Notifications are  send 5  mins prior to the reposition and another at the moment reposition is planned. Next posture and the period in that posture is given with the notification. If the patient is not turned at the specified time then another notifications are send three times with a 5 min interval.
+Notifications are sent 5 mins before the reposition and another at the moment reposition is planned. The next posture and the period in that posture are given with the notification. If the patient is not turned at the specified time then other notifications are sent three times with a 5 min interval.
 
 \input{figs/mobileapp}
 
 
 \section{Pressure Mat}
 
-There are two difference methods to create a pressure mat. The first method is to combine large number of sensors and the second method is to develop a single substrate of pressure sensing material into a sensor panel. First approach is manufacturably complex. Therefore we selected second approach. Velostat\textsuperscript{\textregistered} is a low cost piezo-resistive material that is used for similar applications. \cite{velostat1,velostat2,velsensor} Selection of piezoresistive material over piezocapacitive material reduce complexity of the sensor interfacing. Resistance can be measured constructing a voltage divider. 
+There are two different methods to create a pressure mat. The first method is to combine a large number of sensors and the second method is to develop a single substrate of pressure sensing material into a sensor panel. The first approach is manufacturable complexity. Therefore we selected the second approach. Velostat\textsuperscript{\textregistered} is a low-cost piezo-resistive material that is used for similar applications. \cite{velostat1,velostat2,velsensor} Selection of piezoresistive material over piezo-capacitive material reduce the complexity of the sensor interfacing. Resistance can be measured by constructing a voltage divider. 
 
 
-\subsection{Calibration of the Material}
+\subsection{Calibration of Material}
 
 The relationship between pressure and resistance of Velostat was evaluated as follows. A piece of 1' $\times$ 1' Velostat was sandwiched between two copper plates and Neoprene sheets to create an individual sensor and the resistance was measured over ascending and descending force. 
 \input{figs/utm} Universal Testing Machine was used to apply pressure over the Velostat. The same test was conducted for two layers of Velostat. Although the sensitivity becomes double the impact of hysteresis is higher for two layers. The test was confirmed with deadweight as the pressure from the UTM was unstable in the case of 2 layers of Velostat.\input{figs/deadweight}
 
 \subsection{Communicating Pressure Values} 
 
-The ATMega32 microcontroller powers up each column one by one though analog multiplexers with 5V and measure the voltage of each row (in a voltage divider with a fixed resister) via analog multiplexers with the in-built analog to digital converter, map it to the corresponding pressure value and communicates the measurement to ESP8266 module via UART communication. A baud rate of 9600 was applied and it was sufficient as pressure measurements are not required in a very high frame rate. The ESP8266 module sent pressure data to the information system server via HTTP API endpoint.
+The ATMega32 microcontroller powers up each column one by one through analog multiplexers with 5V and measure the voltage of each row (in a voltage divider with a fixed resister) via analog multiplexers with the in-built analog to digital converter, map it to the corresponding pressure value and communicates the measurement to ESP8266 module via UART communication. A baud rate of 9600 was applied and it was sufficient as pressure measurements are not required in a very high frame rate. The ESP8266 module sent pressure data to the information system server via the HTTP API endpoint.
 
 
 \subsection{Preparing Mat}
 
-Velostat sheet was sandwiched by two Neoprene sheets each one contains set of parallel rows or columns of copper tapes. Each column is attached to the output channels of an analog multiplexer and each rows are attached to the input channels of two multiplexers that works as a one multiplexer in combine. 
+Velostat sheet was sandwiched by two Neoprene sheets each one contains a set of parallel rows or columns of copper tapes. Each column is attached to the output channels of an analog multiplexer and each row are attached to the input channels of two multiplexers that works as one multiplexer in the combine. 
 
 \input{figs/pressure_mat}
 
 Columns are powered one by one using the analog multiplexer and the voltage is measured over a voltage divider choosing each row by other multiplexers. 
 
-Neoprene acts as an insulator to build the copper wire grid. All rows are weakly pulled down according to previous research which shows it reduce cross-talk effects.
+Neoprene acts as an insulator to build the copper wire grid. All rows are weakly pulled down according to previous research which shows it reduces cross-talk effects.
 
 \subsection{Sensor reading processing and communication}
-The communication between ATMega32 and ESP8266 is via UART and then the WIFI server sends it to server. 
+The communication between ATMega32 and ESP8266 is via UART and then the WIFI server sends it to the server. 
 
 
 
