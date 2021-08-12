@@ -1,26 +1,53 @@
 \chapter{Results}
 \label{chapter:results}
 
-\input{figs/ascending_descending}
+% \input{figs/ascending_descending}
 
-The relation between the pressure and resistance was non-linear as we expected.
+% The relation between the pressure and resistance was non-linear as we expected.
 
-\input{figs/velostat_layers.tex}
+% \input{figs/velostat_layers.tex}
  
 
-The pressure mat frames are mapped with color scheme Jet and Gaussian interpolation is used to get the final output. Since there was huge difficulties for a proper and careful calibration in the overall pressure mat we could not get highly satisfactory results. But the mat detected areas corresponding to high pressure approximately. More statisfactory image was obtained for feet when standing on the mattress. \input{figs/mat_frames.tex}
+% The pressure mat frames are mapped with color scheme Jet and Gaussian interpolation is used to get the final output. Since there was huge difficulties for a proper and careful calibration in the overall pressure mat we could not get highly satisfactory results. But the mat detected areas corresponding to high pressure approximately. More statisfactory image was obtained for feet when standing on the mattress. \input{figs/mat_frames.tex}
 
-Several 1.2kg discs were used to check parts of the mattress.
+% Several 1.2kg discs were used to check parts of the mattress.
 
-When an pressure image is sent to the server end point and the posture is detected. Then there are particular ulceration points that are active for that posture. Providing the pressure image and these ulceration point names as the input bounding box parameters can be obtained.
-\input{figs/ml_result}
-All five postures classified correctly and bounding boxes are marked appropriately as in the figures.
+% When an pressure image is sent to the server end point and the posture is detected. Then there are particular ulceration points that are active for that posture. Providing the pressure image and these ulceration point names as the input bounding box parameters can be obtained.
+% \input{figs/ml_result}
+% All five postures classified correctly and bounding boxes are marked appropriately as in the figures.
 
-When ulceration points are located the pressure of these points can be found. We simulated temporal behavour and repositioning using the dataset by University of Dallas.
+% When ulceration points are located the pressure of these points can be found. We simulated temporal behavour and repositioning using the dataset by University of Dallas.
 
-Repositioning considerably shifts the pressure distribution. 
+% Repositioning considerably shifts the pressure distribution. 
+
+% \input{figs/simulation}
+
+
+
+
+The relationship between resistance and pressure is non-linear (as expected for Velostat).\input{figs/ascending_descending} Comparing the curves under ascending and descending forces it can be seen that hysterisis effects are tolerable. Comparing two layers of Velostat against one layer it was revealed that although the sensitivity improved the time for a stable result higher in the case of two layers. Therefore one layer of Velostat is appropriate for the pressure mats. \input{figs/velostat_layers.tex}
+
+\section{Frames of Pressure Mat Readings}
+The frames from pressure mat are mapped with color scheme Jet and Gaussian interpolation is used to get the final output. Since there was huge difficulties for a proper and careful calibration in the overall pressure mat we could not get highly satisfactory results. But the mat detected areas corresponding to high pressure approximately. More statisfactory image was obtained for feet when standing on the mattress. Several 1.2kg discs were used to calibrate parts of the mattress. \input{figs/mat_frames.tex}
+
+\section{Neural Network results}
+When a pressure image is sent to the server end point the posture is detected by the posture detection model. Then there are particular ulceration points that are active for that posture. Providing the pressure image and these ulceration point names as the input, bounding box parameters can be obtained.
+All five postures classified correctly and bounding boxes are marked appropriately as in the figures.\input{figs/ml_result}
+
+\section{Simulation of pressure-time behaviour on ulceration points}
+
+When ulceration points are located the pressure of these points can be found. We simulated temporal behavour and repositioning using the dataset by University of Dallas.Repositioning considerably shifts the pressure distribution and the pressure values are almost stable in a particular posture.
 
 \input{figs/simulation}
+
+\section{Implementation}
+
+\begin{description}
+    \item[The information system]   \url{http://prevelcer.herokuapp.com}
+    \item[App] React native based app
+    \item[API documentation] \url{https://documenter.getpostman.com/view/13647586/TVmHDeox}
+    \item[Neural Network Models] \url{http://prevelcernn.herokuapp.com}
+\end{description}
 
 
 

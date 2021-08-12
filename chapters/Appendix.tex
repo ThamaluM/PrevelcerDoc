@@ -4,6 +4,7 @@
 
 \textbf{Ulceration risk of pressure-time relation}
 
+Based on pressure-time cell death experiment, this equation shows the higher threshold of constant pressure at a certain time T
 \begin{equation}
     P(T) = \frac{P_{max}-P_{min}}{1 + e^{\lambda(T-T_0)}} + P_{min}
 \end{equation}
@@ -17,7 +18,9 @@ Here,
     T_0     &= 95 min
 \end{align*}
 
+(These values are based on experiment expect for $T_0$ which is arbitrary)
 
+Following equation shows the maximum safe time ($T_{max}$) for particular pressure value.  
 \begin{equation}
     T_{max}(P) = 
     \begin{cases}
@@ -27,10 +30,20 @@ Here,
     \end{cases}
 \end{equation}
 
+The risk of the particular pressure value is given by this equation
 \begin{equation}
     \delta R = \frac{\delta t}{T_{max}(P)}
 \end{equation}
 
+Cumulative risk is calculated in the following way.
+
+\begin{enumerate}
+    \item Sum risk when pressure is greater than $P_{min}$.
+    \item Set total risk to zero when pressure becomes lesser than $P_{min}$.
+\end{enumerate}
+
+
+According to this risk metric it is shown that supine posture has higher risk. It further shows that the supine will generate same risk as left or right postures with half of period.
 
 \chapter*{Appendix II}
 \addcontentsline{toc}{chapter}{Appendix II}
@@ -44,10 +57,9 @@ Schematic of the pressure mat
 % \input{figs/algo.tex}
 
 
-\chapter*{Appendix III}
-\addcontentsline{toc}{chapter}{Appendix III}
-\label{chapter:appendix3}
+% \chapter*{Appendix III}
+% \addcontentsline{toc}{chapter}{Appendix III}
+% \label{chapter:appendix3}
 
-ATMega code
+% ATMega code
 
-\cite{Anurag17}
