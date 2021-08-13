@@ -102,7 +102,7 @@ Z.~E. Moore and D.~Patton, ``Risk assessment tools for the prevention of
   2019.
 
 \bibitem{sostoolkit}
-S.~HOMA’SSKIN, ``Toolkit for pressure ulcer prevention and treatment.''
+S.~HOMA’SSKIN, ``Toolkit for pressure ulcer prevention and treatment,'' 2009.
 
 \bibitem{his}
 S.~Ajami and L.~Khaleghi, ``A review on equipped hospital beds with wireless
@@ -141,5 +141,10 @@ D.~Giovanelli and E.~Farella, ``Force sensing resistor and evaluation of
 \bibitem{velsensor}
 S.~Suprapto, H.~Zakaria, W.~Adiprawita, and B.~Supartono, ``Low-cost pressure
   sensor matrix using velostat,'' 11 2017, pp. 137--140.
+
+\bibitem{saxena}
+R.~S. Saxena, N.~K. Saini, and R.~Bhan, ``Analysis of crosstalk in networked
+  arrays of resistive sensors,'' \emph{IEEE Sensors Journal}, vol.~11, no.~4,
+  pp. 920--924, 2010.
 
 \end{thebibliography}

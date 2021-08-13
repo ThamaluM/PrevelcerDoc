@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.8.6)  12 AUG 2021 23:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.8.6)  13 AUG 2021 22:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/hms/personal/FYP_report/fyp_report-master/main/thesis
-(/hms/personal/FYP_report/fyp_report-master/main/thesis.tex
+**/hms/personal/FYP_report/fyp_report-master/PrevelcerDoc/thesis
+(/hms/personal/FYP_report/fyp_report-master/PrevelcerDoc/thesis.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
@@ -555,20 +555,14 @@ Missing character: There is no Â in font ptmr7t!
 Missing character: There is no   in font ptmr7t!
 Missing character: There is no Â in font ptmr7t!
 Missing character: There is no   in font ptmr7t!
-Missing character: There is no Â in font ptmr7t!
-Missing character: There is no   in font ptmr7t!
-Missing character: There is no Â in font ptmr7t!
-Missing character: There is no   in font ptmr7t!
-Missing character: There is no Â in font ptmr7t!
-Missing character: There is no   in font ptmr7t!
 ) [4
 
 
 
-]
+] [5]
 \openout2 = `chapters/Dedication.aux'.
 
- (./chapters/Dedication.tex) [5
+ (./chapters/Dedication.tex) [6
 
 
 
@@ -578,7 +572,7 @@ Missing character: There is no   in font ptmr7t!
  (./chapters/Acknowledgements.tex
 Missing character: There is no Â in font ptmr7t!
 Missing character: There is no   in font ptmr7t!
-) [6
+) [7
 
 
 
@@ -590,34 +584,29 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 9.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [7
+) [8
 
 
 ])
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
- [8] (./thesis.lof)
+ [9] (./thesis.lof)
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
- [9
+ [10
 
 ] (./thesis.lot)
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
- [10
+ [11
 
 ]
 \openout2 = `chapters/Acronyms.aux'.
 
- (./chapters/Acronyms.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--8
-
- []
-
-) [11
+ (./chapters/Acronyms.tex) [12
 
 
 ]
@@ -626,19 +615,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--8
  (./chapters/Introduction.tex
 Chapter 1.
 (./figs/pressure-sore-stages.tex
-<figs/pressure-sore-stages.jpg, id=292, 468.75125pt x 472.76625pt>
+<figs/pressure-sore-stages.jpg, id=297, 468.75125pt x 472.76625pt>
 File: figs/pressure-sore-stages.jpg Graphic file (type jpg)
 <use figs/pressure-sore-stages.jpg>
 Package pdftex.def Info: figs/pressure-sore-stages.jpg  used on input line 4.
 (pdftex.def)             Requested size: 216.81pt x 218.66539pt.
 ) (./figs/reswick-rojers.tex
-<figs/reswick_rojers.jpg, id=296, 429.605pt x 299.1175pt>
+<figs/reswick_rojers.jpg, id=302, 429.605pt x 299.1175pt>
 File: figs/reswick_rojers.jpg Graphic file (type jpg)
 <use figs/reswick_rojers.jpg>
 Package pdftex.def Info: figs/reswick_rojers.jpg  used on input line 4.
 (pdftex.def)             Requested size: 303.53267pt x 211.33884pt.
 ) (./figs/ulceration_points.tex
-<figs/ulceration-points.jpg, id=301, 279.0425pt x 181.67876pt>
+<figs/ulceration-points.jpg, id=308, 279.0425pt x 181.67876pt>
 File: figs/ulceration-points.jpg Graphic file (type jpg)
 <use figs/ulceration-points.jpg>
 Package pdftex.def Info: figs/ulceration-points.jpg  used on input line 4.
@@ -651,17 +640,17 @@ l.16
 
 
 
-] [2 <./figs/pressure-sore-stages.jpg>] [3 <./figs/reswick_rojers.jpg> <./figs/ulceration-points.jpg>]) [4]
+] [2 <./figs/pressure-sore-stages.jpg>] [3 <./figs/reswick_rojers.jpg> <./figs/ulceration-points.jpg>]) [4] [5]
 \openout2 = `chapters/Methodology.aux'.
 
  (./chapters/Methodology.tex
 Chapter 2.
-[5
+[6
 
 
 
 ] (./figs/component-diagram.tex
-<figs/component-diagram.png, id=363, 1371.1225pt x 770.88pt>
+<figs/component-diagram.png, id=376, 1371.1225pt x 770.88pt>
 File: figs/component-diagram.png Graphic file (type png)
 <use figs/component-diagram.png>
 Package pdftex.def Info: figs/component-diagram.png  used on input line 4.
@@ -670,95 +659,95 @@ Package pdftex.def Info: figs/component-diagram.png  used on input line 4.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
  (./figs/functional_block.tex
-<figs/functional_block.png, id=365, 1371.1225pt x 541.02126pt>
+<figs/functional_block.png, id=379, 1371.1225pt x 541.02126pt>
 File: figs/functional_block.png Graphic file (type png)
 <use figs/functional_block.png>
 Package pdftex.def Info: figs/functional_block.png  used on input line 4.
 (pdftex.def)             Requested size: 390.25536pt x 153.98627pt.
-) [6 <./figs/component-diagram.png>] [7 <./figs/functional_block.png>] [8] (./figs/posturemodel.tex
-<figs/posturemodel.png, id=387, 505.89pt x 1295.84125pt>
+) [7 <./figs/component-diagram.png>] [8 <./figs/functional_block.png>] [9] (./figs/posturemodel.tex
+<figs/posturemodel.png, id=401, 505.89pt x 1295.84125pt>
 File: figs/posturemodel.png Graphic file (type png)
 <use figs/posturemodel.png>
 Package pdftex.def Info: figs/posturemodel.png  used on input line 4.
 (pdftex.def)             Requested size: 130.08733pt x 333.21324pt.
-) [9 <./figs/posturemodel.png>] (./figs/ulceration-point.tex
-<figs/ulceration_point.png, id=394, 932.48375pt x 1295.84125pt>
+) [10 <./figs/posturemodel.png>] (./figs/ulceration-point.tex
+<figs/ulceration_point.png, id=408, 932.48375pt x 1295.84125pt>
 File: figs/ulceration_point.png Graphic file (type png)
 <use figs/ulceration_point.png>
 Package pdftex.def Info: figs/ulceration_point.png  used on input line 4.
 (pdftex.def)             Requested size: 260.17465pt x 361.54784pt.
-) (./figs/schedule.tex
-<figs/schedule.png, id=395, 1364.09625pt x 438.63875pt>
+) [11 <./figs/ulceration_point.png>] (./figs/schedule.tex
+<figs/schedule.png, id=416, 1364.09625pt x 438.63875pt>
 File: figs/schedule.png Graphic file (type png)
 <use figs/schedule.png>
 Package pdftex.def Info: figs/schedule.png  used on input line 4.
 (pdftex.def)             Requested size: 433.62001pt x 139.43692pt.
-) [10] [11 <./figs/ulceration_point.png>]
+) [12 <./figs/schedule.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 158--164
 
  []
 
-[12 <./figs/schedule.png>] [13] [14] (./figs/mobileapp.tex
-<figs/mobapp/img1.jpeg, id=425, 542.025pt x 1174.3875pt>
+[13] [14] [15] (./figs/mobileapp.tex
+<figs/mobapp/img1.jpeg, id=442, 542.025pt x 1174.3875pt>
 File: figs/mobapp/img1.jpeg Graphic file (type jpg)
 <use figs/mobapp/img1.jpeg>
 Package pdftex.def Info: figs/mobapp/img1.jpeg  used on input line 4.
 (pdftex.def)             Requested size: 54.2025pt x 117.4277pt.
-<figs/mobapp/img2.jpeg, id=426, 542.025pt x 1174.3875pt>
+<figs/mobapp/img2.jpeg, id=443, 542.025pt x 1174.3875pt>
 File: figs/mobapp/img2.jpeg Graphic file (type jpg)
 <use figs/mobapp/img2.jpeg>
 Package pdftex.def Info: figs/mobapp/img2.jpeg  used on input line 11.
 (pdftex.def)             Requested size: 54.2025pt x 117.4277pt.
-<figs/mobapp/img3.jpeg, id=427, 542.025pt x 1174.3875pt>
+<figs/mobapp/img3.jpeg, id=444, 542.025pt x 1174.3875pt>
 File: figs/mobapp/img3.jpeg Graphic file (type jpg)
 <use figs/mobapp/img3.jpeg>
 Package pdftex.def Info: figs/mobapp/img3.jpeg  used on input line 18.
 (pdftex.def)             Requested size: 54.2025pt x 117.4277pt.
-<figs/mobapp/img7.jpeg, id=428, 542.025pt x 1174.3875pt>
+<figs/mobapp/img7.jpeg, id=445, 542.025pt x 1174.3875pt>
 File: figs/mobapp/img7.jpeg Graphic file (type jpg)
 <use figs/mobapp/img7.jpeg>
 Package pdftex.def Info: figs/mobapp/img7.jpeg  used on input line 25.
 (pdftex.def)             Requested size: 54.2025pt x 117.4277pt.
-<figs/mobapp/img5.jpeg, id=429, 740.7675pt x 1606.0pt>
+<figs/mobapp/img5.jpeg, id=446, 740.7675pt x 1606.0pt>
 File: figs/mobapp/img5.jpeg Graphic file (type jpg)
 <use figs/mobapp/img5.jpeg>
 Package pdftex.def Info: figs/mobapp/img5.jpeg  used on input line 32.
 (pdftex.def)             Requested size: 54.2025pt x 117.50414pt.
-<figs/mobapp/img8.jpeg, id=430, 740.7675pt x 1606.0pt>
+<figs/mobapp/img8.jpeg, id=447, 740.7675pt x 1606.0pt>
 File: figs/mobapp/img8.jpeg Graphic file (type jpg)
 <use figs/mobapp/img8.jpeg>
 Package pdftex.def Info: figs/mobapp/img8.jpeg  used on input line 39.
 (pdftex.def)             Requested size: 54.2025pt x 117.50414pt.
-<figs/mobapp/img4.jpeg, id=431, 542.025pt x 1174.3875pt>
+<figs/mobapp/img4.jpeg, id=448, 542.025pt x 1174.3875pt>
 File: figs/mobapp/img4.jpeg Graphic file (type jpg)
 <use figs/mobapp/img4.jpeg>
 Package pdftex.def Info: figs/mobapp/img4.jpeg  used on input line 46.
 (pdftex.def)             Requested size: 54.2025pt x 117.4277pt.
 ) (./figs/utm.tex
-<figs/utm.jpg, id=435, 961.5925pt x 1284.8pt>
+<figs/utm.jpg, id=452, 961.5925pt x 1284.8pt>
 File: figs/utm.jpg Graphic file (type jpg)
 <use figs/utm.jpg>
 Package pdftex.def Info: figs/utm.jpg  used on input line 4.
 (pdftex.def)             Requested size: 216.81pt x 289.67526pt.
 ) (./figs/deadweight.tex
-<figs/deadweight.jpg, id=436, 770.88pt x 1027.84pt>
+<figs/deadweight.jpg, id=454, 770.88pt x 1027.84pt>
 File: figs/deadweight.jpg Graphic file (type jpg)
 <use figs/deadweight.jpg>
 Package pdftex.def Info: figs/deadweight.jpg  used on input line 4.
 (pdftex.def)             Requested size: 216.81pt x 289.07928pt.
-) [15 <./figs/mobapp/img1.jpeg> <./figs/mobapp/img2.jpeg> <./figs/mobapp/img3.jpeg> <./figs/mobapp/img7.jpeg> <./figs/mobapp/img5.jpeg> <./figs/mobapp/img8.jpeg> <./figs/mobapp/img4.jpeg>] [16 <./figs/utm.jpg> <./figs/deadweight.jpg>] (./figs/pressure_mat.tex
-<figs/pressure_mat.png, id=449, 778.91pt x 573.14125pt>
+) [16 <./figs/mobapp/img1.jpeg> <./figs/mobapp/img2.jpeg> <./figs/mobapp/img3.jpeg> <./figs/mobapp/img7.jpeg> <./figs/mobapp/img5.jpeg> <./figs/mobapp/img8.jpeg> <./figs/mobapp/img4.jpeg>] [17 <./figs/utm.jpg> <./figs/deadweight.jpg>] (./figs/pressure_mat.tex
+<figs/pressure_mat.png, id=468, 778.91pt x 573.14125pt>
 File: figs/pressure_mat.png Graphic file (type png)
 <use figs/pressure_mat.png>
 Package pdftex.def Info: figs/pressure_mat.png  used on input line 4.
 (pdftex.def)             Requested size: 216.81pt x 159.53395pt.
-)) [17 <./figs/pressure_mat.png>]
+)) [18 <./figs/pressure_mat.png>]
 \openout2 = `chapters/Results.aux'.
 
  (./chapters/Results.tex
 Chapter 3.
 (./figs/ascending_descending.tex
-<figs/ascending_descending.png, id=455, 1424.32124pt x 1606.0pt>
+<figs/ascending_descending.png, id=477, 1424.32124pt x 1606.0pt>
 File: figs/ascending_descending.png Graphic file (type png)
 <use figs/ascending_descending.png>
 Package pdftex.def Info: figs/ascending_descending.png  used on input line 4.
@@ -767,65 +756,60 @@ Package pdftex.def Info: figs/ascending_descending.png  used on input line 4.
 Missing character: There is no Â in font ptmr7t!
 Missing character: There is no   in font ptmr7t!
  (./figs/velostat_layers.tex
-<figs/one_layer.png, id=456, 1396.21625pt x 1606.0pt>
+<figs/one_layer.png, id=481, 1396.21625pt x 1606.0pt>
 File: figs/one_layer.png Graphic file (type png)
 <use figs/one_layer.png>
 Package pdftex.def Info: figs/one_layer.png  used on input line 4.
 (pdftex.def)             Requested size: 173.44534pt x 199.49973pt.
-<figs/two_layer.png, id=457, 1396.21625pt x 1606.0pt>
+<figs/two_layer.png, id=482, 1396.21625pt x 1606.0pt>
 File: figs/two_layer.png Graphic file (type png)
 <use figs/two_layer.png>
 Package pdftex.def Info: figs/two_layer.png  used on input line 11.
 (pdftex.def)             Requested size: 173.44534pt x 199.49973pt.
 ) (./figs/mat_frames.tex
-<figs/mat_frames.png, id=458, 1260.71pt x 458.71375pt>
+<figs/mat_frames.png, id=484, 1260.71pt x 458.71375pt>
 File: figs/mat_frames.png Graphic file (type png)
 <use figs/mat_frames.png>
 Package pdftex.def Info: figs/mat_frames.png  used on input line 4.
 (pdftex.def)             Requested size: 433.62001pt x 157.77345pt.
 ) (./figs/ml_result.tex
-<figs/ml_result.png, id=459, 1371.1225pt x 638.385pt>
+<figs/ml_result.png, id=486, 1371.1225pt x 638.385pt>
 File: figs/ml_result.png Graphic file (type png)
 <use figs/ml_result.png>
 Package pdftex.def Info: figs/ml_result.png  used on input line 4.
 (pdftex.def)             Requested size: 433.62001pt x 201.89108pt.
-)
-Overfull \hbox (7.42369pt too wide) in paragraph at lines 39--40
-\OT1/ptm/m/n/12 tem-po-ral be-haviour and repo-si-tion-ing us-ing the dataset by Uni-ver-sity of Dal-las.Repositioning
- []
-
-(./figs/simulation.tex
-<figs/simulation.png, id=460, 1261.71375pt x 451.6875pt>
+) (./figs/simulation.tex
+<figs/simulation.png, id=488, 1261.71375pt x 451.6875pt>
 File: figs/simulation.png Graphic file (type png)
 <use figs/simulation.png>
 Package pdftex.def Info: figs/simulation.png  used on input line 4.
 (pdftex.def)             Requested size: 433.62001pt x 155.23273pt.
 )
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 46.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 23.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Overfull \hbox (18.18588pt too wide) in paragraph at lines 48--49
+Overfull \hbox (18.18588pt too wide) in paragraph at lines 25--26
 [][]$\OT1/pcr/m/n/12 https : / / documenter . getpostman . com / view / 13647586 /
  []
 
-) [18
+[19
 
 
 
-] [19] [20 <./figs/ascending_descending.png> <./figs/one_layer.png> <./figs/two_layer.png>] [21 <./figs/mat_frames.png> <./figs/ml_result.png> <./figs/simulation.png>]
+]) [20] [21 <./figs/ascending_descending.png> <./figs/one_layer.png> <./figs/two_layer.png>] [22 <./figs/mat_frames.png> <./figs/ml_result.png> <./figs/simulation.png>]
 \openout2 = `chapters/Conclusion.aux'.
 
  (./chapters/Conclusion.tex
 Chapter 4.
-) [22
+) [23
 
 
 
 ]
 \openout2 = `chapters/References.aux'.
 
- (./chapters/References.tex (./thesis.bbl [23
+ (./chapters/References.tex (./thesis.bbl [24
 
 
 
@@ -833,22 +817,22 @@ Chapter 4.
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-)) [24]
+)) [25]
 \openout2 = `chapters/Appendix.aux'.
 
- (./chapters/Appendix.tex [25
+ (./chapters/Appendix.tex [26
 
 
 
 ] (./figs/schematic1.tex
 
 pdfTeX warning: pdflatex (file ./figs/schematic1.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figs/schematic1.pdf, id=518, 1194.98447pt x 845.07724pt>
+<figs/schematic1.pdf, id=547, 1194.98447pt x 845.07724pt>
 File: figs/schematic1.pdf Graphic file (type pdf)
 <use figs/schematic1.pdf>
 Package pdftex.def Info: figs/schematic1.pdf  used on input line 4.
 (pdftex.def)             Requested size: 520.34598pt x 367.99248pt.
-)) [26
+)) [27
 
  <./figs/schematic1.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 112.
@@ -857,7 +841,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 2DBC20D40F29C65B577C50EF570A8C7B;2571.
+(rerunfilecheck)             Checksum: 027FB5B3921D09807B85A4E174ACEB8C;2567.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -865,18 +849,18 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 112.
  ) 
 Here is how much of TeX's memory you used:
- 10090 strings out of 494923
- 151252 string characters out of 6180743
- 252708 words of memory out of 5000000
- 12934 multiletter control sequences out of 15000+600000
+ 10094 strings out of 494923
+ 151310 string characters out of 6180743
+ 252738 words of memory out of 5000000
+ 12935 multiletter control sequences out of 15000+600000
  23361 words of font info for 55 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,10n,41p,2612b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,41p,2734b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (38 pages, 3023014 bytes).
+Output written on thesis.pdf (40 pages, 3025430 bytes).
 PDF statistics:
- 610 PDF objects out of 1000 (max. 8388607)
- 513 compressed objects within 6 object streams
- 142 named destinations out of 1000 (max. 500000)
+ 640 PDF objects out of 1000 (max. 8388607)
+ 541 compressed objects within 6 object streams
+ 145 named destinations out of 1000 (max. 500000)
  438 words of extra memory for PDF output out of 10000 (max. 10000000)
 

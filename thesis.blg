@@ -26,49 +26,48 @@ Database file #1: thesis.bib
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty journal in sostoolkit
-Warning--empty year in sostoolkit
 Warning--empty booktitle in velsensor
 
 Done.
-You've used 24 entries,
+You've used 25 entries,
             4087 wiz_defined-function locations,
-            963 strings with 11606 characters,
-and the built_in function-call counts, 16607 in all, are:
-= -- 1316
-> -- 410
-< -- 123
-+ -- 218
-- -- 76
-* -- 789
-:= -- 2524
-add.period$ -- 51
-call.type$ -- 24
-change.case$ -- 22
-chr.to.int$ -- 261
+            970 strings with 11771 characters,
+and the built_in function-call counts, 17571 in all, are:
+= -- 1404
+> -- 431
+< -- 134
++ -- 230
+- -- 79
+* -- 835
+:= -- 2671
+add.period$ -- 53
+call.type$ -- 25
+change.case$ -- 23
+chr.to.int$ -- 285
 cite$ -- 27
-duplicate$ -- 1235
-empty$ -- 1372
-format.name$ -- 95
-if$ -- 3867
+duplicate$ -- 1300
+empty$ -- 1437
+format.name$ -- 99
+if$ -- 4093
 int.to.chr$ -- 0
-int.to.str$ -- 24
-missing$ -- 220
-newline$ -- 95
-num.names$ -- 24
-pop$ -- 526
+int.to.str$ -- 25
+missing$ -- 230
+newline$ -- 98
+num.names$ -- 25
+pop$ -- 542
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1293
+skip$ -- 1370
 stack$ -- 0
-substring$ -- 641
-swap$ -- 964
-text.length$ -- 36
+substring$ -- 698
+swap$ -- 1026
+text.length$ -- 39
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 24
-warning$ -- 3
-while$ -- 69
-width$ -- 26
-write$ -- 244
-(There were 3 warnings)
+type$ -- 25
+warning$ -- 2
+while$ -- 74
+width$ -- 27
+write$ -- 256
+(There were 2 warnings)

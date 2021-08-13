@@ -23,7 +23,7 @@ Therefore our information system architecture is supported by pressure-sensing m
 
 \section{Components and Functionality}
 
-There are three main components of our solution. 
+There are three main components of our solution. (Figure \ref{fig:components})
 \begin{itemize}
 	\item Information System (Server and Backend)
 	\item Mobile App
@@ -33,16 +33,16 @@ There are three main components of our solution.
 \input{figs/component-diagram.tex}
 The information system provides basic components of authentication, and data storage for pressure data, personal risk assessment data and ulcer documentation. It is consist of another supplementary sub-component for machine learning models. The information system provides a RESTful API for mobile app clients and pressure sensing mats. App and pressure sensing mat can send and retrieve relevant information from the information system. The mobile app provides a user interface for patients/guardians, caretakers and doctors to interacts with the system.
 
-The pressure mat consists of a sensor panel developed by a substrate of piezoresistive material Velostat\textsuperscript{\textregistered}. The sensor readings are processed one cell by one in the ATMega32\textsuperscript{\textregistered} microcontroller and send to the information system using a NodeMCU/ESP8266\textsuperscript{\textregistered} via WiFi and the internet. The information system is capable of integrating other available commercial pressure sensing mattresses without any change of their structure.
+The pressure mat consists of a sensor panel developed by a substrate of piezoresistive material Velostat\textsuperscript{\textregistered}. The sensor readings are processed one cell by one in the ATMega32\textsuperscript{\textregistered} microcontroller and send to the information system using a NodeMCU/ESP8266\textsuperscript{\textregistered} via WiFi and the internet. The information system is capable of integrating other available commercial pressure sensing mattresses without any change of their structure. 
 
-In the central server of the information system, these pressure data will be filtered and stored. The sleeping postures and ulceration points are identified by these data and pressure at these points is saved in a separate table using Neural Network Models.
+In the central server of the information system, these pressure data will be filtered and stored. The sleeping postures and ulceration points are identified by these data and pressure at these points is saved in a separate table using Neural Network Models. 
 
-There is a notification system that sends notifications to the caretakers of patients instructing the repositioning plan.
+There is a notification system that sends notifications to the caretakers of patients instructing the repositioning plan. (Functional block diagram is shown in Figure \ref{fig:functional})
 \input{figs/functional_block}
 
 \section{Information system back-end}
 
-Information system backend is written in Python using the enterprise level full stack web designing framework Django\textsuperscript{\textregistered} and hosted in Heroku\textsuperscript{\textregistered} cloud platform. As the database management system, we choose Postgresql which is a SQL based relational database management system. All the static media files are stored in a Cloudinary S3 bucket\textsuperscript{\textregistered}. APIs are created from the django-rest-framework library and Firebase\textsuperscript{\textregistered} is used to communicate with mobile apps with push notifications. 
+Information system backend is written in Python using the enterprise level full stack web designing framework Django\textsuperscript{\textregistered} and hosted in Heroku\textsuperscript{\textregistered} cloud platform. As the database management system, we choose Postgresql which is a SQL based relational database management system. All the static media files are stored in Cloudinary \textsuperscript{\textregistered} (a SaaS for media files). APIs are created from the django-rest-framework library and Firebase\textsuperscript{\textregistered} is used to communicate with mobile apps with push notifications. 
 
 The web application is considered on Django apps (sub-modules) for each main functionality.
 \begin{enumerate}
@@ -90,7 +90,7 @@ We used a dataset from the University of Dallas to train the neural networks and
 
 \subsubsection{Posture Detection Model}
 
-The posture detection model is a sequential model with several convolution and pooling layers before the final dense layers. When the input pressure image is given the model outputs the corresponding name of the sleeping posture.
+The posture detection model is a sequential model with several convolution and pooling layers (Figure \ref{fig:posturemodel}) before the final dense layers. When the input pressure image is given the model outputs the corresponding name of the sleeping posture. 
 \input{figs/posturemodel}
 
 \begin{description}
@@ -106,14 +106,14 @@ The neural network provided 92.45\% holdout set accuracy.
 
 \subsubsection{Ulceration Point Detection Model}
 
-The same dataset was used to train the neural network model for ulceration point detection. We manually created bounding boxes for ulceration points using the annotator tool Labelbox\textsuperscript{\textregistered}. Then we preprocessed images likewise in the previous model. \input{figs/ulceration-point} The four parameters (two coordinates of the upper left corner of the bounding box, height and width) were used to train the model with a mean squared error loss function. There are two inputs to the model. The pressure image and the name of the ulceration point we consider (one-hot encoded). Then the model outputs four parameters for the bounding box. 
+The same dataset was used to train the neural network model for ulceration point detection. We manually created bounding boxes for ulceration points using the annotator tool Labelbox\textsuperscript{\textregistered}. Then we preprocessed images likewise in the previous model. \input{figs/ulceration-point} The four parameters (two coordinates of the upper left corner of the bounding box, height and width) were used to train the model with a mean squared error loss function. There are two inputs to the model.(FIgure \ref{fig:posture_model}) The pressure image and the name of the ulceration point we consider (one-hot encoded). Then the model outputs four parameters for the bounding box. 
 
 
 \subsection{Scheduling}
 
-Usually, 2h recommendation period for any posture is used and there is no particular order of posture order. However, the researchers of the University of Dallas tried to find a repositioning schedule based on pressure distribution. Unfortunately there risk assessment metric is based on data from closely related research for slightly different problems and their final result is dependent on ad-hoc assumptions they used. 
+Usually, 2 h recommendation period for any posture is used and there is no particular order of posture order. However, the researchers of the University of Dallas tried to find a repositioning schedule based on pressure distribution. Unfortunately there risk assessment metric is based on data from closely related research for slightly different problems and their final result is dependent on ad-hoc assumptions they used. (Appendix I)
 
-In summary, if we put the outline of their research in perspective it states that the supine posture is riskier as both sides of the body are subjected to pressure. Although a side of the body is subjected to more pressure in a left or right posture that is a complete relieving phase for the other side of the body. Although we hesitate about the validity of their arbitrary risk metric and ad-hoc assumption we decided to use their result and recommend a repositioning plan as follows. \input{figs/schedule}
+In summary, if we put the outline of their research in perspective it states that the supine posture is the riskiet as both sides of the body are subjected to pressure. Although a side of the body is subjected to more pressure in a left or right posture that is a complete relieving phase for the other side of the body. Although we hesitate about the validity of their arbitrary risk metric and ad-hoc assumption we decided to use their result and recommend a repositioning plan as follows. \input{figs/schedule} (Figure \ref{fig:schedule})
 
 \begin{enumerate}
 	\item Right Yearning - 3 h
@@ -235,7 +235,7 @@ There are two different methods to create a pressure mat. The first method is to
 \subsection{Calibration of Material}
 
 The relationship between pressure and resistance of Velostat was evaluated as follows. A piece of 1' $\times$ 1' Velostat was sandwiched between two copper plates and Neoprene sheets to create an individual sensor and the resistance was measured over ascending and descending force. 
-\input{figs/utm} Universal Testing Machine was used to apply pressure over the Velostat. The same test was conducted for two layers of Velostat. Although the sensitivity becomes double the impact of hysteresis is higher for two layers. The test was confirmed with deadweight as the pressure from the UTM was unstable in the case of 2 layers of Velostat.\input{figs/deadweight}
+\input{figs/utm} Universal Testing Machine (Figure \ref{fig:utm}) was used to apply pressure over the Velostat. The same test was conducted for two layers of Velostat. Although the sensitivity becomes double the impact of hysteresis is higher for two layers. The test was confirmed with deadweight as the pressure from the UTM was unstable in the case of 2 layers of Velostat.\input{figs/deadweight} (Figure \ref{fig:deadweight})
 
 \subsection{Communicating Pressure Values} 
 
@@ -244,16 +244,16 @@ The ATMega32 microcontroller powers up each column one by one through analog mul
 
 \subsection{Preparing Mat}
 
-Velostat sheet was sandwiched by two Neoprene sheets each one contains a set of parallel rows or columns of copper tapes. Each column is attached to the output channels of an analog multiplexer and each row are attached to the input channels of two multiplexers that works as one multiplexer in the combine. 
+Velostat sheet was sandwiched by two Neoprene sheets each one contains a set of parallel rows or columns of copper tapes. Each column is attached to the output channels of an analog multiplexer and each row are attached to the input channels of two multiplexers that works as one multiplexer in the combine. One neoprene sheet contains columns and the other neoprene sheet contains rows therefore when the Velostat sheet was sandwiched by them such that the copper tapes touching the velostat, the columns and rows are perpendicular. The points where the columns intersect the rows act as a pressure sensor. Therefore this setup funcions as a two dimension pressure sensor array with a sensor at each cross point. (Figure \ref{fig:pressuremat})
 
 \input{figs/pressure_mat}
 
 Columns are powered one by one using the analog multiplexer and the voltage is measured over a voltage divider choosing each row by other multiplexers. 
 
-Neoprene acts as an insulator to build the copper wire grid. All rows are weakly pulled down according to previous research which shows it reduces cross-talk effects.
+Neoprene acts as an insulator to build the copper wire grid. All rows are weakly pulled down according to previous research which shows it reduces cross-talk effects (by analysing combined effects).\cite{saxena}
 
 \subsection{Sensor reading processing and communication}
-The communication between ATMega32 and ESP8266 is via UART and then the WIFI server sends it to the server. 
+The communication between ATMega32 and ESP8266 is via UART and then the WiFi router sends it to the server. (ESP8266 module communicates with the WiFi server via WiFi)
 
 
 
